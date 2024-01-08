@@ -11,7 +11,7 @@ Route::controller(LoginController::class) ->group(function(){
     Route::get('/login', 'index')->name('login.index');
     Route::post('/login', 'login')->name('login.login');
     Route::get('/logout', 'destroy')->name('login.destroy');
-    Route::get('/login', 'home')-> name('login.home');
+    Route::get('/home', 'home')-> name('login.home');
 });
 
 Route::get('/aulas', [AulasController::class,'aulas'])->name('aulas.aulas');
