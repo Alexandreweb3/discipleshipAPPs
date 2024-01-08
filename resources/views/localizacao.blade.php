@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Jovens intensos</title>
+    <title>Localição</title>
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;1,300&display=swap');
@@ -134,9 +134,9 @@
             <a href="index.html"><img src="img/Ativo 1.png" alt="." class="logo"></a>
             <nav class="navegation">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Localização</a></li>
-                    <li><a href="#">Login</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contatos.html">Localização</a></li>
+                    <li><a href="index.html">Login</a></li>
                 </ul>
             </nav>
         </header>
