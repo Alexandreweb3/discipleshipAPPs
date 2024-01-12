@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Jovens intensos</title>
+    <title>Localição</title>
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;1,300&display=swap');
@@ -36,7 +36,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-image: ;
+        background: #0D4DC7;
         clip-path: circle(50% at bottom right);
     }
 
@@ -125,19 +125,18 @@
     .formcontact {
         align-items: left;
     }
-    
 </style>
 
 <body>
     <section>
         <div class="circle"></div>
         <header>
+            <a href="index.html"><img src="img/Ativo 1.png" alt="." class="logo"></a>
             <nav class="navegation">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Localização</a></li>
-                    <li><a href="#">Login</a></li>
-
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contatos.html">Localização</a></li>
+                    <li><a href="{{ route('login.index') }}">Login</a></li>
                 </ul>
             </nav>
         </header>
@@ -145,18 +144,14 @@
             <div class="text">
                 <h2><br> <span>Discipulado</span></h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi esse similique dolorum, pariatur, voluptatibus magni dignissimos maiores accusantium eligendi, commodi quaerat eveniet! Consequatur, minima? Voluptas facilis natus provident aliquam? Quisquam?</p>
-                @extends ('master')
+                
 
                 @section('content')
                     <a href="{{ route('login.index') }}">Login</a>
                 @endsection
-                
-
             </div>
         </div>
     </section>
 </body>
-
-
 
 </html>

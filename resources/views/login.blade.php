@@ -69,7 +69,8 @@
             background-color: dodgerblue;
             border: none;
             padding: 15px;
-            width: calc(100% - 16px); /* Igualando largura aos inputs */
+            width: calc(100% - 16px);
+            /* Igualando largura aos inputs */
             border-radius: 10px;
             color: white;
             font-size: 15px;
@@ -125,29 +126,25 @@
             {{ session()->get('success') }}
         @endif
 
-        @if (auth()->check())
-            Already logged in {{ auth()->user()->firstName }} | <a href="{{ route('login.destroy') }}">logout</a>
-        @else
-            @error('error')
+        @error('error')
+            <span>{{ $message }}</span>
+        @enderror
+
+        <form action="{{ route('login.login') }}" method="post" class="form">
+            @csrf
+            <input type="text" name="email" placeholder="Adicione seu E-mail">
+            @error('email')
                 <span>{{ $message }}</span>
             @enderror
 
-            <form action="{{ route('login.index') }}" method="post" class="form">
-                @csrf
-                <input type="text" name="email" placeholder="Adicione seu E-mail">
-                @error('email')
-                    <span>{{ $message }}</span>
-                @enderror
+            <input type="password" name="password" placeholder="Senha">
+            @error('password')
+                <span>{{ $message }}</span>
+            @enderror
 
-                <input type="password" name="password" placeholder="Senha">
-                @error('password')
-                    <span>{{ $message }}</span>
-                @enderror
-
-                <button type="submit">Login</button>
-                <a href="#" class="forgot-password">Esqueceu a senha?</a>
-            </form>
-        @endif
+            <button type="submit">Login</button>
+            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        </form>
     </div>
 
     <script>

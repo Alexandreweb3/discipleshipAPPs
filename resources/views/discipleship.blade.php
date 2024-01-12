@@ -136,15 +136,15 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="contatos.html">Localização</a></li>
-                    <li><a href="index.html">Login</a></li>
+                    <li><a href="{{ route('login.logout') }}">Sair</a></li>
                 </ul>
             </nav>
         </header>
         <div class="container">
             <div class="text">
-                <h2><br> <span>Discipulado</span></h2>
+                <h2><br> <span>{{ auth()->user()->name }} </span></h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi esse similique dolorum, pariatur, voluptatibus magni dignissimos maiores accusantium eligendi, commodi quaerat eveniet! Consequatur, minima? Voluptas facilis natus provident aliquam? Quisquam?</p>
-                @extends ('master')
+                
 
                 @section('content')
                     <a href="{{ route('login.index') }}">Login</a>
