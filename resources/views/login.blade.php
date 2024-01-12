@@ -132,7 +132,7 @@
                 <span>{{ $message }}</span>
             @enderror
 
-            <form action="{{ route('login.store') }}" method="post" class="form">
+            <form action="{{ route('login.index') }}" method="post" class="form">
                 @csrf
                 <input type="text" name="email" placeholder="Adicione seu E-mail">
                 @error('email')

@@ -36,7 +36,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: #0D4DC7;
+        background-image: ;
         clip-path: circle(50% at bottom right);
     }
 
@@ -125,18 +125,19 @@
     .formcontact {
         align-items: left;
     }
+    
 </style>
 
 <body>
     <section>
         <div class="circle"></div>
         <header>
-            <a href="index.html"><img src="img/Ativo 1.png" alt="." class="logo"></a>
             <nav class="navegation">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Localização</a></li>
                     <li><a href="#">Login</a></li>
+
                 </ul>
             </nav>
         </header>
@@ -149,9 +150,13 @@
                 @section('content')
                     <a href="{{ route('login.index') }}">Login</a>
                 @endsection
+                
+
             </div>
         </div>
     </section>
 </body>
+
+
 
 </html>
