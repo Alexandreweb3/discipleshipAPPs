@@ -16,4 +16,3 @@ Route::controller(LoginController::class) ->group(function(){
 
 Route::get('/aulas', [AulasController::class,'aulas'])->name('aulas.aulas');
 
-
