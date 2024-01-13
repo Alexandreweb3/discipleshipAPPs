@@ -31,10 +31,10 @@ class LoginController extends Controller
     $authenticated = auth::attempt($credentials);
     //Log::error('Passou aqui gloria a Deus ');
     if (!$authenticated) {
-      return redirect()->route('login.index')->withErrors(['error' => 'Email or password invalid']);
+      return redirect()->route('login.login')->withErrors(['error' => 'Email ou senha invalido']);
     }
 
-    return view('home');
+    return redirect()->route('discipleship.index');
   }
 
   public function destroy()
