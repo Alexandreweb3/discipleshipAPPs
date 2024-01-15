@@ -8,12 +8,12 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #555555;
+            background-color: #121212;
             margin: 0;
         }
 
         header {
-            background-color: #333;
+            background-color: #444;
             padding: 10px;
             text-align: center;
         }
@@ -31,12 +31,13 @@
         nav a {
             text-decoration: none;
             color: white;
-            padding: 10px;
-            margin: 0 10px;
+            padding: 8px;
+            margin: 0 5px;
+            font-size: 14px;
         }
 
         .container {
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color:#FCDC13;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -44,14 +45,16 @@
             padding: 80px;
             border-radius: 15px;
             color: white;
+            text-align: center; /* Centraliza o texto na div */
         }
 
-        .h2 {
+        h2 {
             color: #333;
         }
 
         .form {
-            margin-top: 20px;
+            margin-top: 30px;
+            text-align: left; 
         }
 
         input[type="text"],
@@ -61,19 +64,19 @@
             margin-bottom: 10px;
             padding: 8px;
             width: calc(100% - 16px);
-            /* Diminui o tamanho dos inputs */
             box-sizing: border-box;
+            border-radius: 10px;
+            border: none
         }
 
         button {
             background-color: dodgerblue;
             border: none;
-            padding: 15px;
+            padding: 12px;
             width: calc(100% - 16px);
-            /* Igualando largura aos inputs */
             border-radius: 10px;
             color: white;
-            font-size: 15px;
+            font-size: 14px;
             cursor: pointer;
         }
 
@@ -86,7 +89,14 @@
             font-size: 14px;
         }
 
-        /* Estilos para telas menores */
+        .forgot-password {
+            display: inline-block;
+            font-size: 12px;
+            margin-top: 5px;
+            color: white;
+            text-align: center;
+        }
+
         @media only screen and (max-width: 600px) {
             nav {
                 flex-direction: column;
@@ -115,7 +125,7 @@
     <header>
         <span class="menu-toggle" onclick="toggleMenu()">☰ Menu</span>
         <nav>
-            <a href="{{ route('index') }}" class="custon-link">Home</a>
+            <a href="{{ route('index') }}" class="custom-link">Home</a>
         </nav>
     </header>
 
@@ -132,7 +142,7 @@
 
         <form action="{{ route('login.login') }}" method="post" class="form">
             @csrf
-            <input type="text" name="email" placeholder="Adicione seu E-mail">
+            <input type="text" name="email" placeholder="E-mail">
             @error('email')
                 <span>{{ $message }}</span>
             @enderror
@@ -153,3 +163,5 @@
         }
     </script>
 </body>
+
+</html>

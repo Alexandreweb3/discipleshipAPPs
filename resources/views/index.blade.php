@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Localição</title>
+    <title>Discipulado - Verbo da Vida</title>
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;1,300&display=swap');
@@ -16,7 +16,6 @@
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
     }
-    
 
     section {
         position: relative;
@@ -45,7 +44,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        padding: 40px 100px;
+        padding: 40px 20px; /* Ajustei o padding para tornar mais compacto */
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -67,11 +66,11 @@
 
     header .navegation li a {
         display: inline-block;
-        color:#FCDC13;
+        color: #FCDC13;
         font-weight: 500;
         text-decoration: none;
-        font-size: 19px;
-        margin-left: 100px;
+        font-size: 16px;
+        margin-left: 20px;
     }
 
     .container {
@@ -90,14 +89,14 @@
 
     .container .text h2 {
         color: #fff;
-        font-size: 2em; /* Reduzindo o tamanho do título */
+        font-size: 2em;
         margin-bottom: 10px;
         line-height: 2.5em;
         font-weight: 700;
     }
 
     .container .text h2 span {
-        font-size: 2.5em; /* Reduzindo o tamanho do span */
+        font-size: 2.5em;
         color: #FCDC13;
     }
 
@@ -107,7 +106,7 @@
 
     .container .text a {
         display: inline-block;
-        margin-top: 50px;
+        margin-top: 20px;
         padding: 10px 25px;
         background: #0D4DC7;
         color: #fff;
@@ -125,6 +124,90 @@
     .formcontact {
         align-items: left;
     }
+
+    /* Estilos para telas menores */
+    .menu-toggle {
+        display: block;
+        font-size: 20px;
+        cursor: pointer;
+        order: 1;
+    }
+
+    .navegation {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #121212;
+        width: 100%;
+        text-align: center;
+    }
+
+    .navegation.show {
+        display: flex;
+    }
+
+    .navegation a {
+        display: block;
+        padding: 15px;
+        margin: 0;
+        color: #FCDC13;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .menu-toggle {
+            display: block;
+        }
+
+        .navegation {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 70px;
+            left: 0;
+            background-color: #121212;
+            width: 100%;
+            text-align: center;
+        }
+
+        .navegation.show {
+            display: flex;
+        }
+
+        .navegation a {
+            display: block;
+            padding: 15px;
+            margin: 0;
+            color: #FCDC13;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+        }
+    }
+
+    @media only screen and (min-width: 768px) {
+        .menu-toggle {
+            display: none;
+        }
+
+        .navegation {
+            display: flex;
+            flex-direction: row;
+            position: static;
+            background-color: transparent;
+            width: auto;
+        }
+
+        .navegation a {
+            padding: 0 20px;
+        }
+        
+    }
+    
 </style>
 
 <body>
