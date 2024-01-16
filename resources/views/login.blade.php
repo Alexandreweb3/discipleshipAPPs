@@ -93,7 +93,7 @@
             display: inline-block;
             font-size: 12px;
             margin-top: 5px;
-            color: white;
+            color: black;
             text-align: center;
         }
 
