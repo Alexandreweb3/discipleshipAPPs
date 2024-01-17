@@ -11,7 +11,7 @@
     <section>
         <div class="circle"></div>
         <header>
-            <a href="index.html"><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
+             <a href="index.html"><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
             <nav class="navegation">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -20,6 +20,7 @@
                 </ul>
             </nav>
         </header>
+        
         <div class="container">
             <div class="text">
                 <h2><br> <span>Discipulado</span></h2>
@@ -32,6 +33,7 @@
             </div>
         </div>
     </section>
+    
 </body>
 
 </html>

@@ -22,18 +22,6 @@ section {
     overflow: hidden;
 }
 
-/* Círculo de fundo */
-.circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #0D4DC7;
-    clip-path: circle(50% at bottom right);
-}
-
-/* Cabeçalho */
 header {
     position: absolute;
     top: 0;
@@ -190,7 +178,6 @@ header .navegation li a:hover {
     }
 }
 
-/* Estilos para telas maiores */
 @media only screen and (min-width: 768px) {
     .menu-toggle {
         display: none;
@@ -207,4 +194,22 @@ header .navegation li a:hover {
     .navegation a {
         padding: 0 20px;
     }
+}
+
+.container-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    margin: 20px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
 }
