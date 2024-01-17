@@ -215,7 +215,7 @@
     <section>
         <div class="circle"></div>
         <header>
-            <a href="index.html"><img src="logoievv.png" alt="." class="logo"></a>
+            <a href="index.html"><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
             <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
             <nav class="navegation">
                 <ul>
