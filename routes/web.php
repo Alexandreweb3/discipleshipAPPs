@@ -15,4 +15,3 @@ Route::controller(LoginController::class) ->group(function(){
 
 Route::get('/discipleship', [DiscipleshipController::class,'index'])->name('discipleship.index');// Pagina do discipleship
 
-
