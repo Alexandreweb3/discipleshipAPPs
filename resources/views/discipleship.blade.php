@@ -25,45 +25,55 @@
         <section>
             <div class="container-box">
                 <div class="box">
-
+                    <p>Video</p>
                 </div>
 
                 <div class="box">
-
+                    <p>Video</p>
                 </div>
 
                 <div class="box">
-
+                    <p>Video</p>
                 </div>
 
                 <div class="box">
-
+                    <p>Video</p>
                 </div>
 
                 <div class="box">
-                </div>
-                <div class="box">
-                </div>
-
-                <div class="box">
+                    <p>Video</p>
                 </div>
 
                 <div class="box">
+                    <p>Video</p>
                 </div>
 
                 <div class="box">
+                    <p>Video</p>
                 </div>
 
                 <div class="box">
+                    <p>Video</p>
                 </div>
 
                 <div class="box">
+                    <p>Video</p>
                 </div>
 
                 <div class="box">
+                    <p>Video</p>
                 </div>
 
                 <div class="box">
+                    <p>Video</p>
+                </div>
+
+                <div class="box">
+                    <p>Video</p>
+                </div>
+
+                <div class="box">
+                    <p>Video</p>
 
                 </div>
             </div>
