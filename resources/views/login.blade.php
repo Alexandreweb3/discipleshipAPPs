@@ -42,10 +42,10 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            padding: 80px;
+            padding: 100px;
             border-radius: 15px;
-            color: white;
-            text-align: center; /* Centraliza o texto na div */
+            color: rgb(155, 155, 155);
+            text-align: center; 
         }
 
         h2 {
@@ -61,8 +61,8 @@
         input[type="password"],
         button {
             display: block;
-            margin-bottom: 10px;
-            padding: 8px;
+            margin-bottom: 15px;
+            padding: 20px;
             width: calc(100% - 16px);
             box-sizing: border-box;
             border-radius: 10px;
@@ -70,9 +70,9 @@
         }
 
         button {
-            background-color: dodgerblue;
+            background-color: #121212;
             border: none;
-            padding: 12px;
+            padding: 9px;
             width: calc(100% - 16px);
             border-radius: 10px;
             color: white;
@@ -91,10 +91,12 @@
 
         .forgot-password {
             display: inline-block;
-            font-size: 12px;
-            margin-top: 5px;
+            font-size: 14px;
+            margin-top: 8px;
             color: black;
             text-align: center;
+            vertical-align: middle;
+            margin-left: 30px;
         }
 
         @media only screen and (max-width: 600px) {
@@ -122,15 +124,9 @@
 </head>
 
 <body>
-    <header>
-        <span class="menu-toggle" onclick="toggleMenu()">☰ Menu</span>
-        <nav>
-            <a href="{{ route('index') }}" class="custom-link">Home</a>
-        </nav>
-    </header>
-
     <div class="container">
-        <h2>Login</h2>
+        <div class="element">
+        <h2>LOGIN</h2>
 
         @if (session()->has('success'))
             {{ session()->get('success') }}
@@ -156,7 +152,7 @@
             <a href="#" class="forgot-password">Esqueceu a senha?</a>
         </form>
     </div>
-
+</div>
     <script>
         function toggleMenu() {
             document.querySelector('nav').classList.toggle('show');

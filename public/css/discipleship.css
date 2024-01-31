@@ -211,15 +211,24 @@ nav.filter {
     position: absolute;
     top: 120px;
     right: 95px;
-    background-color: #FCDC13;
-    color: #fff;
+
+}
+nav.filter-section {
+    padding: 4px;
+    border-radius: 4px;
 }
 
-.filter-section {
-    justify-content: center;
-    align-items: center;
-    margin-top: 120px; 
+nav.filter select {
+    padding: 4px;
+    background-color: #FCDC13;
+    color: #fff;
+    border-radius: 4px;
 }
+
+nav.filter select option:hover {
+    background-color: #FFD700; 
+}
+
 .container-box {
     display: grid;
     grid-template-columns: repeat(3, 3fr);
@@ -229,3 +238,10 @@ nav.filter {
     margin-top: 100px; 
     margin-bottom: 100px;
 }
+
+#categoria{
+    background-color: #FCDC13 ;
+    color: #121212;
+    border-radius: 5px;
+}
+
