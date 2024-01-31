@@ -10,7 +10,6 @@
 
 <body>
     <section>
-
         <header>
             <a href="index.html"><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
             <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
@@ -22,69 +21,35 @@
                 </ul>
             </nav>
         </header>
-        <section>
-            <div class="container-box">
-                <div class="box">
-                    <p>Video</p>
-                </div>
 
-                <div class="box">
-                    <p>Video</p>
-                </div>
-
-                <div class="box">
-                    <p>Video</p>
-                </div>
-
-                <div class="box">
-                    <p>Video</p>
-                </div>
-
-                <div class="box">
-                    <p>Video</p>
-                </div>
-
-                <div class="box">
-                    <p>Video</p>
-                </div>
-
-                <div class="box">
-                    <p>Video</p>
-                </div>
-
-                <div class="box">
-                    <p>Video</p>
-                </div>
-
-                <div class="box">
-                    <p>Video</p>
-                </div>
-
-                <div class="box">
-                    <p>Video</p>
-                </div>
-
-                <div class="box">
-                    <p>Video</p>
-                </div>
-
-                <div class="box">
-                    <p>Video</p>
-                </div>
-
-                <div class="box">
-                    <p>Video</p>
-
-                </div>
+        <nav class="filter">
+            <select id="categoria">
+                <option value="todas">Todas as Aulas</option>
+                <option value="matematica">Matéria 1</option>
+                <option value="Dizimos-e-ofertas">Matéria 2</option>
+                <option value="Doutrinas-básicas">Matéria 3</option>
+                <option value="Doutrinas-básicas">Matéria 4</option>
+                <option value="Doutrinas-básicas">Matéria 5</option>
+                <option value="Doutrinas-básicas">Matéria 6</option>
+            </select>
+        </nav>
+        <div class="container-box">
+            <div class="box">
+                <p>Video</p>
             </div>
-        </section>
+
+            <div class="box">
+                <p>Video</p>
+            </div>
+
+            <div class="box">
+                <p>Video</p>
+            </div>
+
+            <div class="box">
+                <p>Video</p>
+         
     </section>
-    <script>
-        function toggleMenu() {
-            var navigation = document.querySelector('.navegation');
-            navigation.classList.toggle('show');
-        }
-    </script>
 </body>
 <script></script>
 

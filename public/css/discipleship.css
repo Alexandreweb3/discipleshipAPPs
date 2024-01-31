@@ -25,12 +25,11 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 
 header .logo {
     position: relative;
@@ -206,4 +205,22 @@ header .navegation li a:hover {
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
+}
+
+nav.filter {
+    position: absolute;
+    top: 120px;
+    right: 95px;
+}
+
+nav.filter select {
+    padding: 4px;
+    background-color: #FCDC13;
+    color: #fff;
+    border-radius: 4px;
+}
+.container-box{
+    position: absolute;
+    top: auto;
+    right: auto;
 }
