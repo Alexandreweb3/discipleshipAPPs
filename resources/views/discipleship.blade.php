@@ -48,6 +48,13 @@
 
             <div class="box">
                 <p>Video</p>
+            </div>
+            <div class="box">
+                <p>Video</p>
+            </div>
+            <div class="box">
+                <p>Video</p>
+            </div>
          
     </section>
 </body>

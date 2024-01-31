@@ -199,7 +199,7 @@ header .navegation li a:hover {
     width: 300px;
     height: 200px;
     margin: 20px;
-    background-color: #333;
+    background-color: #FCDC13;
     color: #fff;
     display: flex;
     align-items: center;
@@ -211,16 +211,21 @@ nav.filter {
     position: absolute;
     top: 120px;
     right: 95px;
-}
-
-nav.filter select {
-    padding: 4px;
     background-color: #FCDC13;
     color: #fff;
-    border-radius: 4px;
 }
-.container-box{
-    position: absolute;
-    top: auto;
-    right: auto;
+
+.filter-section {
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px; 
+}
+.container-box {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 100px;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 100px; 
+    margin-bottom: 100px;
 }
