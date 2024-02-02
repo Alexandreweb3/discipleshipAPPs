@@ -9,7 +9,9 @@
 </head>
 <body>
     <section>
-        <div class="circle"></div>
+        <div class="circle">
+            <img src="storage/imgricardo.jpg" alt="Imagem pastores">
+        </div>
         <header>
              <a href="index.html"><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
             <nav class="navegation">
@@ -24,8 +26,7 @@
         <div class="container">
             <div class="text">
                 <h2><br> <span>Discipulado</span></h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi esse similique dolorum, pariatur, voluptatibus magni dignissimos maiores accusantium eligendi, commodi quaerat eveniet! Consequatur, minima? Voluptas facilis natus provident aliquam? Quisquam?</p>
-                
+                <p>Olá! Seja muito bem-vindo à nossa plataforma de aulas, um espaço especialmente desenvolvido para você. Desfrute de todas as oportunidades de crescimento e aprendizado. Junte-se a nós e avancemos juntos!</p>
 
                 @section('content')
                     <a href="{{ route('login.index') }}">Login</a>

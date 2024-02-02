@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="favicon" href="{{ asset('css/discipleship.css') }}sotra">
     <title>Login Discipulado</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #121212;
+            background-image: url(storage/imgricardo.jpg)
             margin: 0;
         }
 
@@ -81,7 +82,7 @@
         }
 
         button:hover {
-            background-color: darkblue;
+            background-color:grey;
         }
 
         .span {
