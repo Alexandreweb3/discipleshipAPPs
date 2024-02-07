@@ -43,7 +43,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            padding: 60px;
+            padding: 40px;
             border-radius: 15px;
             color: rgb(155, 155, 155);
             text-align: center; 
@@ -55,7 +55,7 @@
         }
 
         .form {
-            margin-top: 30px;
+            margin-top: 20px;
             text-align: left; 
         }
 

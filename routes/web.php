@@ -5,6 +5,8 @@ use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\contatoController;
+use App\Http\Controllers\locationController;
+
 
 Route::get('/', [IndexController::class,'index'])->name('index');
 Route::get('/location', [locationController::class,'index'])->name('location');
