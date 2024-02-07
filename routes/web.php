@@ -1,10 +1,10 @@
 <?php
 
 use App\Http\Controllers\DiscipleshipController;
-use App\Http\Controllers\locationController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\contatoController;
 
 Route::get('/', [IndexController::class,'index'])->name('index');
 Route::get('/location', [locationController::class,'index'])->name('location');
@@ -17,4 +17,6 @@ Route::controller(LoginController::class) ->group(function(){
 });
 
 Route::get('/discipleship', [DiscipleshipController::class,'index'])->name('discipleship.index');
+
+Route::get('/contato', [contatoController::class,'index'])->name('contato');
 

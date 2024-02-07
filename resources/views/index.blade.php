@@ -18,7 +18,7 @@
             <nav class="navegation">
                 <ul>
                     <li><a href="{{ route('index') }}">Home</a></li>
-                    <li><a href="index.html">Contato</a></li>
+                    <li><a href="{{ route('contato') }}">Contato</a></li>
                     <li><a href="{{ route('location') }}">Localização</a></li>
                     <li><a href="{{ route('login.index') }}">Login</a></li>
                 </ul>

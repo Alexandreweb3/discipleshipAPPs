@@ -16,7 +16,7 @@
             <nav class="navegation">
                 <ul>
                     <li><a href="{{ route('index')}}">Home</a></li>
-                    <li><a href="{{ route('location')}}">Contatos</a></li>
+                    <li><a href="{{ route('contato')}}">Contatos</a></li>
                     <li><a href="{{ route('location') }}">Localização</a></li>
                     <li><a href="{{ route('index')}}">Sair</a></li>
                 </ul>

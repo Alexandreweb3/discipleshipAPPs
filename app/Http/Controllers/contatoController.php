@@ -11,7 +11,7 @@ class contatoController extends Controller
      */
     public function index()
     {
-        //
+        return view('contato');
     }
 
     /**
