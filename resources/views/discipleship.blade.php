@@ -11,13 +11,14 @@
 <body>
     <section>
         <header>
-            <a href=""><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
+            <a href={{ route('index') }}><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
             <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
             <nav class="navegation">
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="contatos.html">Localização</a></li>
-                    <li><a href="{{ route('index') }}">Sair</a></li>
+                    <li><a href="{{ route('index')}}">Home</a></li>
+                    <li><a href="{{ route('location')}}">Contatos</a></li>
+                    <li><a href="{{ route('location') }}">Localização</a></li>
+                    <li><a href="{{ route('index')}}">Sair</a></li>
                 </ul>
             </nav>
         </header>

@@ -14,11 +14,12 @@
         </div>
         
         <header>
-             <a href="index.html"><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
+             <a href="{{ route('index') }}"><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
             <nav class="navegation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contatos.html">Localização</a></li>
+                    <li><a href="{{ route('index') }}">Home</a></li>
+                    <li><a href="index.html">Contato</a></li>
+                    <li><a href="{{ route('location') }}">Localização</a></li>
                     <li><a href="{{ route('login.index') }}">Login</a></li>
                 </ul>
             </nav>

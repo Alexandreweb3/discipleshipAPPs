@@ -13,4 +13,9 @@ class DiscipleshipController extends Controller
   {
     return view('discipleship');
   }
+
+  public function location()
+  {
+    return view('location');
+  }
 }
