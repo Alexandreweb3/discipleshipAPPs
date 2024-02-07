@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/discipleship.css') }}">
-    <title>Discipulado - Verbo da Vida</title>
+    <title>Discipulado - Verbo da Vida Praia</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
             <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
             <nav class="navegation">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Home</a></li>
                     <li><a href="contatos.html">Localização</a></li>
                     <li><a href="{{ route('index') }}">Sair</a></li>
                 </ul>

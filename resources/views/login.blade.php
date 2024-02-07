@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="favicon" href="{{ asset('css/discipleship.css') }}sotra">
-    <title>Login Discipulado</title>
+    <title>Discipulado - Verbo da Vida Praia</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-image: url(storage/imgricardo.jpg) margin: 0;
+            background-image: url(h7710,/ public/storege/imgricardo
+            0)\
+            margin: 0;
         }
 
         header {
@@ -37,7 +39,7 @@
         }
 
         .container {
-            background-color: #FCDC13;
+            background-color:#FCDC13;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -45,7 +47,7 @@
             padding: 100px;
             border-radius: 15px;
             color: rgb(155, 155, 155);
-            text-align: center;
+            text-align: center; 
         }
 
         h2 {
@@ -54,7 +56,7 @@
 
         .form {
             margin-top: 30px;
-            text-align: left;
+            text-align: left; 
         }
 
         input[type="text"],
@@ -81,7 +83,7 @@
         }
 
         button:hover {
-            background-color: grey;
+            background-color:grey;
         }
 
         .span {
@@ -126,33 +128,33 @@
 <body>
     <div class="container">
         <div class="element">
-            <h2>LOGIN</h2>
+        <h2>LOGIN</h2>
 
-            @if (session()->has('success'))
-                {{ session()->get('success') }}
-            @endif
+        @if (session()->has('success'))
+            {{ session()->get('success') }}
+        @endif
 
-            @error('error')
+        @error('error')
+            <span>{{ $message }}</span>
+        @enderror
+
+        <form action="{{ route('login.login') }}" method="post" class="form">
+            @csrf
+            <input type="text" name="email" placeholder="E-mail" value="davi@gmail.com">
+            @error('email')
                 <span>{{ $message }}</span>
             @enderror
 
-            <form action="{{ route('login.login') }}" method="post" class="form">
-                @csrf
-                <input type="text" name="email" placeholder="E-mail" value="davi@gmail.com">
-                @error('email')
-                    <span>{{ $message }}</span>
-                @enderror
+            <input type="password" name="password" placeholder="Senha" value="Dev$1811">
+            @error('password')
+                <span>{{ $message }}</span>
+            @enderror
 
-                <input type="password" name="password" placeholder="Senha" value="Dev$1811">
-                @error('password')
-                    <span>{{ $message }}</span>
-                @enderror
-
-                <button type="submit">Login</button>
-                <a href="#" class="forgot-password">Esqueceu a senha?</a>
-            </form>
-        </div>
+            <button type="submit">Login</button>
+            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        </form>
     </div>
+</div>
     <script>
         function toggleMenu() {
             document.querySelector('nav').classList.toggle('show');
