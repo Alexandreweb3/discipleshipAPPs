@@ -9,9 +9,8 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-image: url(h7710,/ public/storege/imgricardo
-            0)\
             margin: 0;
+            background-color: #121212
         }
 
         header {
@@ -44,7 +43,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            padding: 100px;
+            padding: 60px;
             border-radius: 15px;
             color: rgb(155, 155, 155);
             text-align: center; 
@@ -52,6 +51,7 @@
 
         h2 {
             color: #333;
+            margin-top: -12px;
         }
 
         .form {
@@ -121,6 +121,14 @@
             nav.show a {
                 display: block;
             }
+            .background{
+                background-size: cover;
+                background-attachment: fixed;
+                margin: 0;
+    padding: 0;
+            }
+            
+           
         }
     </style>
 </head>
