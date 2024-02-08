@@ -88,12 +88,13 @@
 
     input[type="text"],
     input[type="email"],
+    input[type="tel"],
     textarea {
-        width: calc(100% - 20px); /* Ajuste de largura para considerar o padding do container */
+        width: calc(100% - 20px); 
         padding: 10px;
         margin-bottom: 20px;
         border: 1px solid #ccc;
-        /* Removido border-radius para deixar o formulário retangular */
+        resize: none;
         box-sizing: border-box;
     }
 
@@ -106,16 +107,15 @@
         color: white;
         padding: 10px 20px;
         border: none;
-        /* Removido border-radius para deixar o formulário retangular */
         cursor: pointer;
     }
 
     input[type="submit"]:hover {
-        background-color: #0056b3;
+        background-color: #0166d1;
     }
 
     .map-container {
-        max-width: 800px; /* Alterado para 800 pixels */
+        max-width: 800px; 
         height: 300px;
         border-radius: 5px;
         overflow: hidden;
