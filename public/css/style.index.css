@@ -74,7 +74,7 @@ header .navegation li a {
 }
 
 header .navegation li a:hover {
-    color: #FCDC13;
+    color: #0D4DC7;
 }
 
 .container {
@@ -101,7 +101,7 @@ header .navegation li a:hover {
 
 .container .text h2 span {
     font-size: 2.5em;
-    color: #FCDC13;
+    color: #0D4DC7;
 }
 
 .container .text p {
@@ -151,7 +151,7 @@ header .navegation li a:hover {
     display: block;
     padding: 15px;
     margin: 0;
-    color: #FCDC13;
+    color: #0D4DC7;
     text-decoration: none;
     font-weight: 500;
     font-size: 16px;
@@ -181,7 +181,7 @@ header .navegation li a:hover {
         display: block;
         padding: 15px;
         margin: 0;
-        color: #FCDC13;
+        color: #0D4DC7;
         text-decoration: none;
         font-weight: 500;
         font-size: 16px;

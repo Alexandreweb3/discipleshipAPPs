@@ -4,140 +4,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="favicon" href="{{ asset('css/discipleship.css') }}sotra">
     <title>Discipulado - Verbo da Vida Praia</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
             margin: 0;
-            background-color: #121212
-        }
-
-        header {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .menu-toggle {
-            display: none;
-        }
-
-        nav {
+            padding: 0;
             display: flex;
             justify-content: center;
-            background-color: #444;
+            align-items: center;
+            height: 100vh;
         }
 
-        nav a {
+        .login-container {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .login-container h2 {
+            margin-top: 0;
+            font-size: 24px;
+            text-align: center;
+            color: #333333;
+            margin-bottom: 30px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 6px;
+            background-color: #f5f5f5;
+            font-size: 16px;
+            color: #333333;
+            box-sizing: border-box;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container button[type="submit"] {
+            width: 100%;
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .login-container .links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .login-container .links a {
+            display: block;
             text-decoration: none;
-            color: white;
-            padding: 8px;
-            margin: 0 5px;
-            font-size: 14px;
+            color: #007bff;
+            font-size: 16px;
+            transition: color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .login-container .links a:hover {
+            color: #0056b3;
         }
 
         .container {
-            background-color:#FCDC13;
-            position: absolute;
-            top: 50%;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
             left: 50%;
-            transform: translate(-50%, -50%);
-            padding: 40px;
-            border-radius: 15px;
-            color: rgb(155, 155, 155);
-            text-align: center; 
-        }
-
-        h2 {
-            color: #333;
-            margin-top: -12px;
-        }
-
-        .form {
-            margin-top: 20px;
-            text-align: left; 
-        }
-
-        input[type="text"],
-        input[type="password"],
-        button {
-            display: block;
-            margin-bottom: 15px;
-            padding: 20px;
-            width: calc(100% - 16px);
-            box-sizing: border-box;
-            border-radius: 10px;
-            border: none
-        }
-
-        button {
-            background-color: #121212;
-            border: none;
-            padding: 9px;
-            width: calc(100% - 16px);
-            border-radius: 10px;
-            color: white;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color:grey;
-        }
-
-        .span {
-            color: red;
-            font-size: 14px;
-        }
-
-        .forgot-password {
-            display: inline-block;
-            font-size: 14px;
-            margin-top: 8px;
-            color: black;
+            transform: translateX(-50%);
             text-align: center;
-            vertical-align: middle;
-            margin-left: 30px;
+            width: 80%;
+            margin: 20px auto;
+            color: white
+           
         }
 
-        @media only screen and (max-width: 600px) {
-            nav {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .menu-toggle {
-                display: block;
-                cursor: pointer;
-                order: 1;
-            }
-
-            nav a {
-                display: none;
-                order: 3;
-            }
-
-            nav.show a {
-                display: block;
-            }
-            .background{
-                background-size: cover;
-                background-attachment: fixed;
-                margin: 0;
-    padding: 0;
-            }
-            
-           
+        .footer p {
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="element">
-        <h2>LOGIN</h2>
 
+    <div class="login-container">
+        <h2>Acessar Aulas</h2>
         @if (session()->has('success'))
             {{ session()->get('success') }}
         @endif
@@ -148,26 +121,31 @@
 
         <form action="{{ route('login.login') }}" method="post" class="form">
             @csrf
-            <input type="text" name="email" placeholder="E-mail" value="davi@gmail.com">
-            @error('email')
-                <span>{{ $message }}</span>
-            @enderror
-
-            <input type="password" name="password" placeholder="Senha" value="Dev$1811">
-            @error('password')
-                <span>{{ $message }}</span>
-            @enderror
-
-            <button type="submit">Login</button>
-            <a href="#" class="forgot-password">Esqueceu a senha?</a>
-        </form>
+            <form action="#" method="post" class="form">
+                @csrf
+                <input type="text" name="email" placeholder="E-mail" value="davi@gmail.com">
+                @error('email')
+                    <span>{{ $message }}</span>
+                @enderror
+                <input type="password" name="password" placeholder="Senha" value="Dev$1811">
+                @error('password')
+                    <span>{{ $message }}</span>
+                @enderror
+                <button type="submit">Login</button>
+            </form>
+            <div class="links">
+                <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                <a href="#" class="forgot-password">Criar conta</a>
+            </div>
     </div>
-</div>
-    <script>
-        function toggleMenu() {
-            document.querySelector('nav').classList.toggle('show');
-        }
-    </script>
+    <div class="footer">
+        <p> © 2024 Discipulado Verbo da Vida Praia</p>
+
+        <script>
+            function toggleMenu() {
+                document.querySelector('nav').classList.toggle('show');
+            }
+        </script>
 </body>
 
 </html>
