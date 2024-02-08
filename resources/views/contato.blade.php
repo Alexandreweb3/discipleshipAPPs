@@ -30,6 +30,7 @@
 
     header {
         position: absolute;
+        background-color: black; 
         top: 0;
         left: 0;
         width: 100%;
@@ -115,23 +116,27 @@
     }
 
     .map-container {
-        max-width: 800px; 
-        height: 300px;
+        max-width: 1000px; 
+        height: 500px;
         border-radius: 5px;
         overflow: hidden;
     }
 
     .map {
-        width: 100%; /* Largura do mapa definida como 100% para ocupar todo o espaço disponível */
+        width: 100%; 
         height: 100%;
     }
+    .left-text p{
+    text-align: left; 
+    margin-bottom: 20px; 
+    color: #0166d1
+}
 </style>
 
 <body>
     <section>
         <header>
             <a href={{ route('index') }}><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
-            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
             <nav class="navegation">
                 <ul>
                     <li><a href="{{ route('index') }}">Home</a></li>
@@ -141,8 +146,12 @@
                 </ul>
             </nav>
         </header>
+        <div class="left-text">
+            <p>PRECISA DE ASSISTÊNCIA? ESTAMOS AQUI PARA TE AJUDAR! <br> ENTRAREMOS EM CONTATO EM BREVE.</p>
+        </div>    
         <div class="container">
-            <h2>Entre em Contato</h2>
+            <h2>Preencha o Formulário</h2>
+            <br>
             <form action="#" method="post">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
@@ -158,9 +167,6 @@
 
                 <input type="submit" value="Enviar">
             </form>
-        </div>
-        <div class="map-container">
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.2496327482673!2d-34.83898968518092!3d-7.090869694890783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd0c649271d9%3A0x677e64d27ff09b8a!2sIgreja%20Verbo%20da%20Vida%20-%20Praia!5e0!3m2!1sen!2sbr!4v1644428153245!5m2!1sen!2sbr" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 

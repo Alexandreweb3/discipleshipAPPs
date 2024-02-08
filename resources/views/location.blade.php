@@ -41,15 +41,15 @@
 
     header {
         position: absolute;
+        background-color: black; 
         top: 0;
         left: 0;
         width: 100%;
-        padding: 40px 20px; 
+        padding: 10px 20px;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-
     header .logo {
         position: relative;
         max-width: 150px;
