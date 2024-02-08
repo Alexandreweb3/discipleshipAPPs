@@ -20,27 +20,12 @@
         position: relative;
         width: 100%;
         min-height: 100vh;
-        padding: 100px 20px; /* Ajuste de padding para adicionar espaçamento nos lados */
+        padding: 100px 20px; 
         display: flex;
-        flex-direction: column; /* Organizar os elementos em coluna */
+        flex-direction: column;
         align-items: center;
         background: #121212;
         overflow: hidden;
-    }
-
-    .circle {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-    }
-
-    .circle img {
-        position: absolute;
-        bottom: 0;
-        right: 0;
     }
 
     header {
@@ -83,10 +68,11 @@
     }
 
     .container {
-        max-width: 600px;
-        padding: 60px;
+        max-width: 400px;
+        padding: 40px;
+        border-radius: 8px;
+        width: 100%;
         background-color: #fff;
-        border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         margin-bottom: 20px; 
     }
@@ -107,7 +93,7 @@
         padding: 10px;
         margin-bottom: 20px;
         border: 1px solid #ccc;
-        border-radius: 5px;
+        /* Removido border-radius para deixar o formulário retangular */
         box-sizing: border-box;
     }
 
@@ -120,7 +106,7 @@
         color: white;
         padding: 10px 20px;
         border: none;
-        border-radius: 5px;
+        /* Removido border-radius para deixar o formulário retangular */
         cursor: pointer;
     }
 
@@ -129,7 +115,7 @@
     }
 
     .map-container {
-        max-width: 500px; /* Largura máxima definida como 500 pixels */
+        max-width: 800px; /* Alterado para 800 pixels */
         height: 300px;
         border-radius: 5px;
         overflow: hidden;

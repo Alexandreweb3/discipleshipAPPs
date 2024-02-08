@@ -134,17 +134,15 @@
                 <button type="submit">Login</button>
             </form>
             <div class="links">
-                <a href="#" class="forgot-password">Esqueceu a senha?</a>
                 <a href="#" class="forgot-password">Criar conta</a>
+                <a href="#" class="forgot-password">Esqueceu a senha?</a>
             </div>
     </div>
     <div class="footer">
         <p> © 2024 Discipulado Verbo da Vida Praia</p>
 
         <script>
-            function toggleMenu() {
-                document.querySelector('nav').classList.toggle('show');
-            }
+        
         </script>
 </body>
 
