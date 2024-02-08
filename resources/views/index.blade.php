@@ -10,7 +10,6 @@
 <body>
     <section>
         <div class="circle">
-            <img src="{{ 'storage/imgcirilo.jpg' }}" alt="Imagem pastores">
         </div>
         
         <header>

@@ -147,7 +147,7 @@
             </nav>
         </header>
         <div class="left-text">
-            <p>PRECISA DE ASSISTÊNCIA? ESTAMOS AQUI PARA TE AJUDAR! <br> ENTRAREMOS EM CONTATO EM BREVE.</p>
+            <p>PRECISA DE ASSISTÊNCIA? ESTAMOS AQUI PARA TE AJUDAR! ENTRAREMOS EM CONTATO EM BREVE.</p>
         </div>    
         <div class="container">
             <h2>Preencha o Formulário</h2>

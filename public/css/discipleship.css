@@ -12,9 +12,9 @@ section {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
+    padding: 100px 20px; 
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     background: #121212;
     overflow: hidden;
@@ -37,7 +37,6 @@ header .logo {
     max-width: 150px;
 }
 
-/* Menu de navegação */
 header .navegation ul {
     position: relative;
     display: flex;
@@ -58,7 +57,7 @@ header .navegation li a {
 }
 
 header .navegation li a:hover {
-    color: #FCDC13;
+    color: #0D4DC7;
 }
 
 .container {
