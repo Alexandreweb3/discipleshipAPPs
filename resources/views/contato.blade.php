@@ -20,9 +20,9 @@
         position: relative;
         width: 100%;
         min-height: 100vh;
-        padding: 100px;
+        padding: 100px 20px; /* Ajuste de padding para adicionar espaçamento nos lados */
         display: flex;
-        justify-content: space-between;
+        flex-direction: column; /* Organizar os elementos em coluna */
         align-items: center;
         background: #121212;
         overflow: hidden;
@@ -84,11 +84,11 @@
 
     .container {
         max-width: 600px;
-        margin: 50px auto;
-        padding: 20px;
+        padding: 60px;
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px; 
     }
 
     h2 {
@@ -103,7 +103,7 @@
     input[type="text"],
     input[type="email"],
     textarea {
-        width: 100%;
+        width: calc(100% - 20px); /* Ajuste de largura para considerar o padding do container */
         padding: 10px;
         margin-bottom: 20px;
         border: 1px solid #ccc;
@@ -129,15 +129,14 @@
     }
 
     .map-container {
-        width: 100%;
+        max-width: 500px; /* Largura máxima definida como 500 pixels */
         height: 300px;
         border-radius: 5px;
         overflow: hidden;
-        margin-top: 20px;
     }
 
     .map {
-        width: 100%;
+        width: 100%; /* Largura do mapa definida como 100% para ocupar todo o espaço disponível */
         height: 100%;
     }
 </style>
@@ -155,7 +154,6 @@
                     <li><a href="{{ route('index') }}">Sair</a></li>
                 </ul>
             </nav>
-
         </header>
         <div class="container">
             <h2>Entre em Contato</h2>
@@ -176,7 +174,7 @@
             </form>
         </div>
         <div class="map-container">
-            <iframe class="map" src="https://www.google.com.br/maps/place/Igreja+Verbo+da+Vida+-+Praia/@-7.0908644,-34.8403559,17z/data=!4m14!1m7!3m6!1s0x7acdd0c649271d9:0x677e64d27ff09b8a!2sIgreja+Verbo+da+Vida+-+Praia!8m2!3d-7.0908697!4d-34.837781!16s%2Fg%2F12lrlxzbj!3m5!1s0x7acdd0c649271d9:0x677e64d27ff09b8a!8m2!3d-7.0908697!4d-34.837781!16s%2Fg%2F12lrlxzbj?entry=ttu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.2496327482673!2d-34.83898968518092!3d-7.090869694890783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd0c649271d9%3A0x677e64d27ff09b8a!2sIgreja%20Verbo%20da%20Vida%20-%20Praia!5e0!3m2!1sen!2sbr!4v1644428153245!5m2!1sen!2sbr" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
     </section>
 
