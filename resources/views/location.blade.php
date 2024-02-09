@@ -217,6 +217,7 @@ header .navegation li a:hover {
                     <li><a href="{{ route('login.index') }}">Login</a></li>
                 </ul>
             </nav>
+            
         </header>
        
         </div>
