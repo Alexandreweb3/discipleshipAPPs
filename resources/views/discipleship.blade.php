@@ -17,7 +17,7 @@
                 <ul>
                     <li><a href="{{ route('index')}}">Home</a></li>
                     <li><a href="{{ route('contato')}}">Contatos</a></li>
-                    <li><a href="{{ route('location') }}">Localização</a></li>
+                    <li><a href="{{ route('location') }}">Perfil</a></li>
                     <li><a href="{{ route('index')}}">Sair</a></li>
                 </ul>
             </nav>
@@ -25,7 +25,6 @@
 
         <nav class="filter">
             <select id="categoria">
-                <option value="todas">Todas as Aulas</option>
                 <option value="Integridade-da-Palavra">Integridade da Palavra</option>
                 <option value="Arrependimento-de-obras-mortas">Arrependimento de obras mortas</option>
                 <option value="Fundamentos-da-Fe">Fundamentos da Fé </option>
@@ -40,7 +39,7 @@
         </nav>
         <div class="container-box">
             <div class="box">
-                <p>Video</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QxyEVg0Kmww" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="box">
                 <p>Video</p>
