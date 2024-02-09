@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ asset('css/discipleship.css') }}">
-    <title>Discipulado - Verbo da Vida Praia</title>
+    <title>Discipulado IEVV Praia</title>
 </head>
 
 <body>
@@ -15,10 +15,10 @@
             <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
             <nav class="navegation">
                 <ul>
-                    <li><a href="{{ route('index')}}">Home</a></li>
-                    <li><a href="{{ route('contato')}}">Contatos</a></li>
-                    <li><a href="{{ route('location') }}">Perfil</a></li>
-                    <li><a href="{{ route('index')}}">Sair</a></li>
+                    <li><a href="{{ route('index') }}">Home</a></li>
+                    <li><a href="{{ route('contato') }}">Contatos</a></li>
+                    <li><a href="{{ route('perfil') }}">Perfil</a></li>
+                    <li><a href="{{ route('index') }}">Sair</a></li>
                 </ul>
             </nav>
         </header>
@@ -39,19 +39,20 @@
         </nav>
         <div class="container-box">
             <div class="box">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QxyEVg0Kmww" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QxyEVg0Kmww" frameborder="0"
+                    allowfullscreen></iframe>
             </div>
             <div class="box">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QxyEVg0Kmww" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QxyEVg0Kmww" frameborder="0"
+                    allowfullscreen></iframe>
             </div>
             <div class="box">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QxyEVg0Kmww" frameborder="0" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QxyEVg0Kmww" frameborder="0"
+                    allowfullscreen></iframe>
             </div>
 
     </section>
 </body>
-<script>
-    
-</script>
+<script></script>
 
 </html>
