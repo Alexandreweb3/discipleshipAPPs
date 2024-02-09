@@ -42,14 +42,16 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/QxyEVg0Kmww" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="box">
-                <p>Video</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QxyEVg0Kmww" frameborder="0" allowfullscreen></iframe>
             </div>
             <div class="box">
-                <p>Video</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QxyEVg0Kmww" frameborder="0" allowfullscreen></iframe>
             </div>
 
     </section>
 </body>
-<script></script>
+<script>
+    
+</script>
 
 </html>
