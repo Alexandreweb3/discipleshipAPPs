@@ -137,35 +137,26 @@
         text-align: center;
         background-color: #0166d1;
         color: #fff;
-
     }
-
-
+    
     .information {
         text-align: center;
-        /* Alinha o texto ao centro */
     }
 
-    /* Estilos para cada item dentro do contêiner */
     .item {
         display: flex;
         align-items: center;
         margin-bottom: 10px;
-        /* Adiciona um espaço entre os itens */
     }
 
-    /* Estilos para os ícones */
     .icon {
         margin-right: 10px;
-        /* Adiciona um espaço entre o ícone e o texto */
     }
 
-    /* Estilos para o contêiner de informações de contato */
     .contact-info {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* Centraliza o conteúdo horizontalmente */
     }
 </style>
 
