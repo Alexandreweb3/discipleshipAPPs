@@ -24,7 +24,6 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            /* Alinhado à esquerda */
             background: #121212;
             overflow: hidden;
         }
@@ -212,8 +211,8 @@
 
         .containerlocation h1 {
             text-align: center;
-            margin-left: 20px;
-            
+            margin-left: 15px;
+
         }
 
         .containertime {
@@ -222,13 +221,26 @@
             text-align: left;
         }
 
-        .half {
-            width: 50%; /* Cada div ocupará metade da largura */
-            border: 1px solid black; /* Apenas para visualização */
-            box-sizing: border-box; /* Inclui bordas na largura total */
+        .half-left {
+            width: 50%;
+            box-sizing: border-box;
             padding: 20px;
             text-align: center;
             border: none;
+            color: #fff;
+        }
+
+        .elements-left {
+            text-align: center;
+        }
+
+        .half-right {
+            width: 50%;
+            /* Ocupa 50% da largura da tela */
+            box-sizing: border-box;
+            padding: 20px;
+            text-align: center;
+            /* Alinha o conteúdo ao centro */
         }
     </style>
 </head>
@@ -246,8 +258,8 @@
                 </ul>
             </nav>
         </header>
-        <div class="containerlocation">
-            <div class="half">
+        <div class="half-left">
+            <div class="elements-left">
                 <h1>NOSSA LOCALIZAÇÃO</h1>
                 <br>
                 <iframe
@@ -256,18 +268,17 @@
                 </iframe>
                 <p>R. Herberto Pereira de Lucena, 241<br>Jardim Oceania, João Pessoa - PB, 58037-235</p>
                 <br>
-                <h1>Horário dos nosso cultos</h1>
+                <h1>Horário dos nossos cultos</h1>
                 <p>- Domingo: 16:00 - 18:00</p>
                 <p>- Terça: 16:00 - 18:00</p>
                 <p>- Sábado: 20:00 </p>
             </div>
+            <div class="half-right">
 
-            <div class="half">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error perspiciatis earum, doloremque
-                    itaque, eos natus vel cumque dolore dolor a accusamus facere ducimus similique accusantium iusto
-                    aperiam dolorum laborum culpa.</p>
             </div>
+        </div>
     </section>
 </body>
+
 
 </html>
