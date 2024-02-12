@@ -229,8 +229,15 @@ header .navegation li a:hover {
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15802.36349095657!2d-34.83947299318902!3d-7.090866147687016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd0c649271d9%3A0x677e64d27ff09b8a!2sIgreja%20Verbo%20da%20Vida%20-%20Praia!5e0!3m2!1sen!2sbr!4v1644703156180!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
             </iframe>
             <p>R. Herberto Pereira de Lucena, 241 - Jardim Oceania, João Pessoa - PB, 58037-235</p>
-
+            <br>
+            <br>
+            <div class="containertime">
+                <h1>Horário dos nosso cultos</h1>
+                <p>- Domingo: 16:00 - 18:00</p>
+                <p>- Terça: 16:00 - 18:00</p>
+                <p>- Sábado: 20:00 </p>
             
+            </div>
         </body>
         </div>
     </section>
