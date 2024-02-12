@@ -270,7 +270,7 @@
                     <br>
                     <h1>Horário dos nossos cultos</h1>
                     <p>- Domingo: 16:00 - 18:00</p>
-                    <p>- Terça: 16:00 - 18:00</p>
+                    <p>- Terça: 20:00</p>
                     <p>- Sábado: 20:00 </p>
                 </div>
             </div>
