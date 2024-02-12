@@ -9,6 +9,7 @@
 </head>
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,500;0,700;1,300&display=swap');
     * {
         margin: 0;
         padding: 0;
@@ -130,7 +131,7 @@
     .left-text p {
         text-align: left;
         margin-bottom: 20px;
-        color: #0166d1
+        color: #fff;
     }
 
     .information {
