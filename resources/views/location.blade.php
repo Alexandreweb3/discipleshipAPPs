@@ -233,6 +233,12 @@
         .elements-left {
             text-align: center;
         }
+
+        .img-igreja{
+            width: 650px;
+            height: auto;
+            margin-top: -88px;
+        }
     </style>
 </head>
 
