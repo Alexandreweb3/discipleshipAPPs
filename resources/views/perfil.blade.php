@@ -18,6 +18,7 @@
         body {
             margin: 0;
             padding: 0;
+            background-color: #121212;
         }
 
         .container {
@@ -148,28 +149,29 @@
             <label for="nascimento">Data de Nascimento:</label>
             <input type="date" id="data_nascimento" name="data_nascimento" required>
 
-            <label for="pergunta1">Você é nascido de novo?</label>
+            <label for="nascido">Você é nascido de novo?</label>
             <select id="pergunta1" name="pergunta1" required>
                 <option value="">Selecione uma opção</option>
                 <option value="opcao1">Sim</option>
                 <option value="opcao2">Não</option>
             </select>
 
-            <label for="pergunta2">Você é Batizado nas águas?</label>
+            <label for="batizado">Você é Batizado nas águas?</label>
             <select id="pergunta2" name="pergunta2" required>
                 <option value="">Selecione uma opção</option>
                 <option value="opcao1">Sim</option>
                 <option value="opcao2">Não</option>
             </select>
 
-            <label for="pergunta2">Qual tipo de Batismo nas águas realizado?</label>
+            <label for="batismoagua">Qual tipo de Batismo nas águas realizado?</label>
             <select id="pergunta2" name="pergunta2" required>
+                <option value="">Selecione uma opção</option>
                 <option value="">Imersão</option>
                 <option value="opcao1">Aspersão</option>
                 <option value="opcao2">Não sou batizado nas águas</option>
             </select>
 
-            <label for="pergunta2">Você é Batizado no Espírito Santo?</label>
+            <label for="batizadoespirito">Você é Batizado no Espírito Santo?</label>
             <select id="pergunta2" name="pergunta2" required>
                 <option value="">Sim</option>
                 <option value="opcao1">Não</option>
