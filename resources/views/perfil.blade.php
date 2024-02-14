@@ -104,7 +104,7 @@
         }
 
         .forms form input[type="submit"]:hover {
-            background-color: #0056b3;
+            background-color: #0D4DC7;
         }
 
         .forms form select {
@@ -139,26 +139,43 @@
             <label for="nome">Nome Completo:</label>
             <input type="text" id="nome" name="nome" required>
 
-            <label for="data_nascimento">Data de Nascimento:</label>
+            <label for="numero">Número:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="nascimento">Data de Nascimento:</label>
             <input type="date" id="data_nascimento" name="data_nascimento" required>
 
-            <label for="pergunta1">Pergunta 1:</label>
+            <label for="pergunta1">Você é nascido de novo?</label>
             <select id="pergunta1" name="pergunta1" required>
                 <option value="">Selecione uma opção</option>
-                <option value="opcao1">Opção 1</option>
-                <option value="opcao2">Opção 2</option>
-                <option value="opcao3">Opção 3</option>
+                <option value="opcao1">Sim</option>
+                <option value="opcao2">Não</option>
             </select>
 
-            <label for="pergunta2">Pergunta 2:</label>
+            <label for="pergunta2">Você é Batizado nas águas?</label>
             <select id="pergunta2" name="pergunta2" required>
                 <option value="">Selecione uma opção</option>
-                <option value="opcao1">Opção 1</option>
-                <option value="opcao2">Opção 2</option>
-                <option value="opcao3">Opção 3</option>
+                <option value="opcao1">Sim</option>
+                <option value="opcao2">Não</option>
             </select>
 
-            <input type="submit" value="Enviar">
+            <label for="pergunta2">Qual tipo de Batismo nas águas realizado?</label>
+            <select id="pergunta2" name="pergunta2" required>
+                <option value="">Imersão</option>
+                <option value="opcao1">Aspersão</option>
+                <option value="opcao2">Não sou batizado nas águas</option>
+            </select>
+
+            <label for="pergunta2">Você é Batizado no Espírito Santo?</label>
+            <select id="pergunta2" name="pergunta2" required>
+                <option value="">Sim</option>
+                <option value="opcao1">Não</option>
+            </select>
+
+            <input type="submit" value="Salvar">
         </form>
     </div>
     </div>
