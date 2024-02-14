@@ -23,7 +23,7 @@
             padding: 100px 20px;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Alterado para centralizar os itens horizontalmente */
+            align-items: center; 
             background: #121212;
             overflow: hidden;
         }
