@@ -16,37 +16,32 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        section {
-            position: relative;
-            width: 100%;
-            min-height: 100vh;
-            padding: 100px 20px;
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            background: #121212;
-            overflow: hidden;
+            height: 100vh;
         }
 
         header {
-            position: absolute;
             background-color: black;
-            top: 0;
-            left: 0;
-            width: 100%;
             padding: 10px 20px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-shrink: 0;
+    
         }
 
         header .logo {
-            position: relative;
             max-width: 150px;
         }
 
         header .navegation ul {
-            position: relative;
             display: flex;
         }
 
@@ -71,38 +66,48 @@
 </head>
 
 <body>
-    <header>
-        <a href={{ route('index') }}><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
-        <nav class="navegation">
-            <ul>
-                <li><a href="{{ route('index') }}">Home</a></li>
-                <li><a href="{{ route('contato') }}">Contatos</a></li>
-                <li><a href="{{ route('location') }}">Localização</a></li>
-                <li><a href="{{ route('index') }}">Sair</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="profile-card">
-        <h1>Formulário de Perfil do Usuário</h1>
-        <form action="submit.php" method="post">
-            <label for="username">Nome de Usuário:</label>
-            <input type="text" id="username" name="username" required><br><br>
-            
-            <label for="bio">Biografia:</label><br>
-            <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            
-            <label for="age">Idade:</label>
-            <input type="number" id="age" name="age" required><br><br>
-            
-            <label for="location">Localização:</label>
-            <input type="text" id="location" name="location"><br><br>
-            
-            <input type="submit" value="Enviar">
-        </form>
-    </div>
+    <div class="container">
+        <header>
+            <a href={{ route('index') }}><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
+            <nav class="navegation">
+                <ul>
+                    <li><a href="{{ route('index') }}">Home</a></li>
+                    <li><a href="{{ route('contato') }}">Contatos</a></li>
+                    <li><a href="{{ route('discipleship.index') }}">Aulas</a></li>
+                    <li><a href="{{ route('index') }}">Sair</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="form-container">
+                <h1>Meu Perfil</h1>
+                <form action="#" method="post">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+    
+                    <label for="data_nascimento">Data de Nascimento:</label>
+                    <input type="date" id="data_nascimento" name="data_nascimento" required>
+    
+                    <label for="pergunta1">Pergunta 1:</label>
+                    <select id="pergunta1" name="pergunta1" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="opcao1">Opção 1</option>
+                        <option value="opcao2">Opção 2</option>
+                        <option value="opcao3">Opção 3</option>
+                    </select>
+    
+                    <label for="pergunta2">Pergunta 2:</label>
+                    <select id="pergunta2" name="pergunta2" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="opcao1">Opção 1</option>
+                        <option value="opcao2">Opção 2</option>
+                        <option value="opcao3">Opção 3</option>
+                    </select>
+    
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
 </body>
 
 </html>
