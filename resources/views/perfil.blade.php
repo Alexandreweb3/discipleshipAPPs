@@ -140,7 +140,7 @@
             <label for="nome">Nome Completo:</label>
             <input type="text" id="nome" name="nome" required>
 
-            <label for="numero">Número:</label>
+            <label for="number">Número:</label>
             <input type="text" id="nome" name="nome" required>
 
             <label for="email">E-mail</label>
