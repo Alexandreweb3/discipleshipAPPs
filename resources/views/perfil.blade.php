@@ -134,6 +134,7 @@
     </div>
     <br>
     <br>
+    <br>
     <div class="forms">
         <h1>Meu Perfil</h1>
         <form action="#" method="post">
@@ -181,6 +182,8 @@
         </form>
     </div>
     </div>
+    <br>
+    <br>
 </body>
 
 </html>
