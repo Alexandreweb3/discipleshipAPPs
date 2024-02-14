@@ -124,10 +124,10 @@
             <a href={{ route('index') }}><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
             <nav class="navegation">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Contatos</a></li>
-                    <li><a href="#">Aulas</a></li>
-                    <li><a href="#">Sair</a></li>
+                    <li><a href="{{ route('index') }}">Home</a></li>
+                    <li><a href="{{ route('contato') }}">Contatos</a></li>
+                    <li><a href="{{ route('discipleship.index') }}">Aulas</a></li>
+                    <li><a href="{{ route('index') }}">Sair</a></li>
                 </ul>
             </nav>
         </header>
