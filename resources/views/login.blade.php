@@ -51,7 +51,7 @@
 
         .login-container button[type="submit"] {
             width: 100%;
-            background-color: #007bff;
+            background-color: #FCDC18;
             color: #ffffff;
             border: none;
             padding: 15px;
@@ -62,7 +62,7 @@
         }
 
         .login-container button[type="submit"]:hover {
-            background-color: #0056b3;
+            background-color: #eead2d;
         }
 
         .login-container .links {
@@ -73,7 +73,8 @@
         .login-container .links a {
             display: block;
             text-decoration: none;
-            color: #007bff;
+            color: #000000;
+            /* Alterado para preto */
             font-size: 16px;
             transition: color 0.3s ease;
             margin-top: 10px;
@@ -96,8 +97,7 @@
             text-align: center;
             width: 80%;
             margin: 20px auto;
-            color: white
-           
+            color: white;
         }
 
         .footer p {
@@ -108,42 +108,40 @@
 </head>
 
 <body>
-
     <div class="login-container">
-        <h2>Acessar Aulas</h2>
+        <h2>ACESSAR AULAS</h2>
+
         @if (session()->has('success'))
-            {{ session()->get('success') }}
+        {{ session()->get('success') }}
         @endif
 
         @error('error')
-            <span>{{ $message }}</span>
+        <span>{{ $message }}</span>
         @enderror
 
         <form action="{{ route('login.login') }}" method="post" class="form">
             @csrf
-            <form action="#" method="post" class="form">
-                @csrf
-                <input type="text" name="email" placeholder="E-mail" value="davi@gmail.com">
-                @error('email')
-                    <span>{{ $message }}</span>
-                @enderror
-                <input type="password" name="password" placeholder="Senha" value="Dev$1811">
-                @error('password')
-                    <span>{{ $message }}</span>
-                @enderror
-                <button type="submit">Login</button>
-            </form>
-            <div class="links">
-                <a href="#" class="forgot-password">Criar conta</a>
-                <a href="#" class="forgot-password">Esqueceu a senha?</a>
-            </div>
-    </div>
-    <div class="footer">
-        <p> © 2024 Discipulado Verbo da Vida Praia</p>
+            <input type="text" name="email" placeholder="E-mail" value="davi@gmail.com">
+            @error('email')
+            <span>{{ $message }}</span>
+            @enderror
+            <input type="password" name="password" placeholder="Senha" value="Dev$1811">
+            @error('password')
+            <span>{{ $message }}</span>
+            @enderror
+            <button type="submit">Login</button>
+        </form>
 
-        <script>
-        
-        </script>
+        <div class="links">
+            <a href="#" class="forgot-password">Criar conta</a>
+            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 Discipulado Verbo da Vida Praia</p>
+    </div>
+
 </body>
 
 </html>
