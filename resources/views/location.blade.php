@@ -23,7 +23,7 @@
             padding: 100px 20px;
             display: flex;
             flex-direction: column;
-            align-items: center; 
+            align-items: center;
             background: #121212;
             overflow: hidden;
         }
@@ -221,8 +221,10 @@
             text-align: left;
         }
 
-        .half-left, .half-right {
-            flex: 1; /* Alterado para ocupar metade da largura da tela */
+        .half-left,
+        .half-right {
+            flex: 1;
+            /* Alterado para ocupar metade da largura da tela */
             box-sizing: border-box;
             padding: 20px;
             text-align: center;
@@ -234,7 +236,7 @@
             text-align: center;
         }
 
-        .img-igreja{
+        .img-igreja {
             width: 600px;
             height: 450px;
             margin-top: -139px;
@@ -245,12 +247,12 @@
 <body>
     <section>
         <header>
-            <a href={{ route('index') }}><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
+            <a href="{{ route('index') }}"><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
             <nav class="navegation">
                 <ul>
-                    <li><a href={{ route('index') }}>Home</a></li>
-                    <li><a href="{{ route('contato') }}">Contatos</a></li>
-                    <li><a href={{ route('home') }}>Aulas</a></li>
+                    <li><a href="{{ route('index') }}">Home</a></li>
+                    <li><a href="{{ route('contato') }}">Contato</a></li>
+                    <li><a href="{{ route('location') }}">Localização</a></li>
                     <li><a href="{{ route('login.index') }}">Login</a></li>
                 </ul>
             </nav>
@@ -260,9 +262,7 @@
                 <div class="elements-left">
                     <h1>NOSSA LOCALIZAÇÃO</h1>
                     <br>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15802.36349095657!2d-34.83947299318902!3d-7.090866147687016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd0c649271d9%3A0x677e64d27ff09b8a!2sIgreja%20Verbo%20da%20Vida%20-%20Praia!5e0!3m2!1sen!2sbr!4v1644703156180!5m2!1sen!2sbr"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15802.36349095657!2d-34.83947299318902!3d-7.090866147687016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acdd0c649271d9%3A0x677e64d27ff09b8a!2sIgreja%20Verbo%20da%20Vida%20-%20Praia!5e0!3m2!1sen!2sbr!4v1644703156180!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
                     </iframe>
                     <br>
                     <br>
@@ -277,7 +277,7 @@
             <div class="half-right">
                 <img src="storage/imgigreja.jpg" alt="img-igreja" class="img-igreja">
             </div>
-            
+
         </div>
     </section>
 </body>

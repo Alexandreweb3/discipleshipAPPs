@@ -164,7 +164,8 @@
 <body>
     <section>
         <header>
-            <a href={{ route('index') }}><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
+        <a href="{{ route('index') }}"><img src="{{ asset('/storage/logoievv.png') }}" alt="." class="logo"></a>
+
             <nav class="navegation">
                 <ul>
                     <li><a href="{{ route('index') }}">Home</a></li>
