@@ -4,9 +4,7 @@ use App\Http\Controllers\DiscipleshipController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\contatoController;
 use App\Http\Controllers\locationController;
-use App\Http\Controllers\perfilController;
 
 
 Route::get('/', [IndexController::class,'index'])->name('index');
@@ -21,8 +19,4 @@ Route::controller(LoginController::class) ->group(function(){
 });
 
 Route::get('/discipleship', [DiscipleshipController::class,'index'])->name('discipleship.index');
-
-Route::get('/contato', [contatoController::class,'index'])->name('contato');
-
-Route::get('/perfil', [perfilController::class,'index'])->name('perfil');
 

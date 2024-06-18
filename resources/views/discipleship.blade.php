@@ -95,7 +95,7 @@
             <a href="{{ route('index') }}"><img src="\storage\logoievv.png" alt="" class="logo"></a>
             <nav class="navegation">
                 <ul>
-                    <li><a href="{{ route('location') }}">botão-vazio</a></li>
+                    <li><a href="{{ route('location') }}">Perfil</a></li>
                     <li><a href="{{ route('index') }}">Sair</a></li>
                 </ul>
             </nav>
