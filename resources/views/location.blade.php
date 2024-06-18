@@ -140,10 +140,13 @@
                 <div class="half-right">
                     <br>
                     <h1>Horário dos nossos cultos</h1>
-                    <p>- Domingo: 16:00 - 18:00</p>
-                    <p>- Terça: 20:00</p>
-                    <p>- Sábado: 20:00 </p>
-                    <p>R. Herberto Pereira de Lucena, 241<br>Jardim Oceania, João Pessoa - PB, 58037-235</p>
+                    <p>Culto de Louvor e Adoração  |  Domingo  | 16 e 18 horas.</p>
+                    <br>
+                    <p>Culto de Oração  |  Terça-feira  |  20 horas.</p>
+                    <br>
+                    <p>Culto dos Jovens - Join  |  Sábado (1° e 3° do mês) |  19 horas.</p>
+                    <br>
+                    <p>R. Herberto Pereira de Lucena, 241Jardim Oceania, João Pessoa - PB, 58037-235</p>
                 </div>
 
 
