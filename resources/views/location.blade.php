@@ -94,7 +94,7 @@
     .half-right {
         width: 40%;
         text-align: center;
-        color: #FCDC13;
+        color: #fff;
     }
 
     .half-right img {
@@ -108,7 +108,7 @@
 
     h1 {
         margin-bottom: 20px;
-        color: #FCDC13;
+        color: #fff;
         text-align: center;
     }
 
