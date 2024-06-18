@@ -27,13 +27,11 @@ class LoginController extends Controller
     ]);
 
     $credentials = $request->only('email', 'password');
-
     $authenticated = auth::attempt($credentials);
     //Log::error('Passou aqui gloria a Deus ');
     if (!$authenticated) {
-      return redirect()->route('login.login')->withErrors(['error' => 'Email ou senha invalido']);
+      return redirect()->route('login.index')->withErrors(['error' => 'Email ou senha invalido']);
     }
-
     return redirect()->route('discipleship.index');
   }
 

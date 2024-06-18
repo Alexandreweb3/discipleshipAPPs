@@ -15,10 +15,9 @@ Route::get('home', [DiscipleshipController::class,'home'])->name('home');
 
 
 Route::controller(LoginController::class) ->group(function(){
-    Route::get('/index', 'index')->name('login.index');
+    Route::get('/tela-de-login', 'index')->name('login.index');
     Route::post('/login', 'login')->name('login.login');
     Route::get('/logout', 'destroy')->name('login.logout');
-    
 });
 
 Route::get('/discipleship', [DiscipleshipController::class,'index'])->name('discipleship.index');
@@ -26,3 +25,4 @@ Route::get('/discipleship', [DiscipleshipController::class,'index'])->name('disc
 Route::get('/contato', [contatoController::class,'index'])->name('contato');
 
 Route::get('/perfil', [perfilController::class,'index'])->name('perfil');
+
