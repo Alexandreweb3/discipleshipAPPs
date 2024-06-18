@@ -4,20 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css/discipleship.css') }}">
     <title>Discipulado IEVV Praia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+        section {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            padding: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #121212;
+            overflow: hidden;
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 40px 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo {
+            position: relative;
+            max-width: 150px;
+        }
+
+        header .navegation ul {
+            display: flex;
+            padding: 0;
+        }
+
+        header .navegation li {
+            list-style: none;
+        }
+
+        header .navegation li a {
+            display: inline-block;
+            color: #fff;
+            font-weight: 500;
+            text-decoration: none;
+            font-size: 19px;
+            margin-left: 100px;
+        }
+
+        header .navegation li a:hover {
+            color: #FCDC13;
+        }
+
+        nav.filter {
+            position: absolute;
+            top: 120px;
+            right: 95px;
+
+        }
+
+        nav.filter-section {
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        nav.filter select {
+            padding: 4px;
+            background-color: #000000;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        nav.filter select option:hover {
+            background-color: #000000;
+        }
+    </style>
 </head>
 
 <body>
     <section>
         <header>
-            <a href={{ route('index') }}><img src="{{ 'storage/logoievv.png' }}" alt="." class="logo"></a>
-            <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+            <a href="{{ route('index') }}"><img src="\storage\logoievv.png" alt="" class="logo"></a>
             <nav class="navegation">
                 <ul>
-                    <li><a href="{{ route('index') }}">Home</a></li>
-                    <li><a href="{{ route('contato') }}">Contatos</a></li>
-                    <li><a href="{{ route('perfil') }}">Perfil</a></li>
+                    <li><a href="{{ route('location') }}">botão-vazio</a></li>
                     <li><a href="{{ route('index') }}">Sair</a></li>
                 </ul>
             </nav>
@@ -37,22 +115,6 @@
                 <option value="Envolva-se">Envolva-se</option>
             </select>
         </nav>
-        <div class="container-box">
-            <div class="box">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QxyEVg0Kmww" frameborder="0"
-                    allowfullscreen></iframe>
-            </div>
-            <div class="box">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QxyEVg0Kmww" frameborder="0"
-                    allowfullscreen></iframe>
-            </div>
-            <div class="box">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QxyEVg0Kmww" frameborder="0"
-                    allowfullscreen></iframe>
-            </div>
-
-    </section>
 </body>
-<script></script>
 
 </html>
