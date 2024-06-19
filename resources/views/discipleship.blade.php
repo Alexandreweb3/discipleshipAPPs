@@ -137,20 +137,23 @@
         .deliveringsummary h1 {
             font-size: 24px;
             margin-bottom: 20px;
+
         }
 
         .deliveringsummary p {
             font-size: 16px;
             line-height: 1.6;
             margin-bottom: 20px;
+            color: #fff;
         }
 
         .form-container {
             width: 50%;
-            background-color: #121212;
+            background-color: #161616;
             padding: 50px;
             margin-top: 20px;
             color: #FCDC13;
+
         }
 
         .form-container h2 {
@@ -161,10 +164,13 @@
         .form-container form {
             display: flex;
             flex-direction: column;
+
         }
 
         .form-container label {
             margin-bottom: 10px;
+            color: #fff;
+
         }
 
         .form-container input,
@@ -175,6 +181,7 @@
             background-color: transparent;
             color: #FCDC13;
             border-radius: 4px;
+            border-color: #252525;
         }
 
         .form-container input[type="submit"] {
@@ -225,14 +232,12 @@
             </select>
         </nav>
     </section>
-    <<section>
+    <section>
         <div class="deliveringsummary">
             <h1>FINALIZOU?</h1>
-            <p>Prezado aluno(a),
-
-Parabéns por sua dedicação ao finalizar esta aula! Acreditamos que você foi grandemente edificado com o conteúdo apresentado. Caso surjam dúvidas ou se desejar discutir algum aspecto da aula, por favor, preencha o formulário abaixo. Nosso professor está disponível para ajudá-lo da melhor forma possível.
-
-Lembramos que é obrigatório anexar um resumo da aula no campo abaixo. Certifique-se de que seu resumo seja claro e bem estruturado, com um mínimo de 20 linhas para uma análise adequada.</p>
+            <p>Prezado aluno(a), <br>Parabéns por sua dedicação ao finalizar esta aula! Acreditamos que você foi grandemente edificado com o conteúdo apresentado. Caso surjam dúvidas ou se desejar discutir algum aspecto da aula, por favor, preencha o formulário abaixo. Nosso professor estará disponível para ajudá-lo da melhor forma possível.</p>
+            <br>
+            <p>Lembramos que é obrigatório para alunos que estão repondo aula, anexar um resumo da aula no campo "Anexar arquivo". Certifique-se de que seu resumo seja claro e bem estruturado, com um mínimo de 20 linhas para uma análise adequada.</p>
         </div>
 
         <div class="form-container">
@@ -246,6 +251,11 @@ Lembramos que é obrigatório anexar um resumo da aula no campo abaixo. Certifiq
 
                 <label for="message">Mensagem:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label for="file">Anexar resumo:</label>
+                <input type="file" id="file" name="file" accept=".pdf,.doc,.docx" required>
+                <small>Formatos permitidos: PDF, DOC, DOCX.</small>
+                <br>
 
                 <input type="submit" value="Enviar">
             </form>
