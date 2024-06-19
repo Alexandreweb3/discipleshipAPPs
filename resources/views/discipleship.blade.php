@@ -150,7 +150,6 @@
             background-color: #121212;
             padding: 50px;
             margin-top: 20px;
-            /* Espaçamento entre a seção anterior e esta */
             color: #FCDC13;
         }
 
@@ -229,7 +228,11 @@
     <<section>
         <div class="deliveringsummary">
             <h1>FINALIZOU?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab, laboriosam. Perspiciatis qui quam ducimus modi soluta, velit, aperiam aliquid dolore libero corporis ad aspernatur voluptatum. Dicta dolore eius deserunt alias <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nesciunt vitae vero commodi quidem veritatis ea dolorem modi facilis libero, beatae sequi veniam obcaecati quaerat unde ut tempore quae corrupti. <br> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod modi provident repellat, assumenda, voluptatem fuga natus et error consequuntur enim facere reiciendis blanditiis sequi adipisci ducimus quis nam nisi quasi!</p>
+            <p>Prezado aluno(a),
+
+Parabéns por sua dedicação ao finalizar esta aula! Acreditamos que você foi grandemente edificado com o conteúdo apresentado. Caso surjam dúvidas ou se desejar discutir algum aspecto da aula, por favor, preencha o formulário abaixo. Nosso professor está disponível para ajudá-lo da melhor forma possível.
+
+Lembramos que é obrigatório anexar um resumo da aula no campo abaixo. Certifique-se de que seu resumo seja claro e bem estruturado, com um mínimo de 20 linhas para uma análise adequada.</p>
         </div>
 
         <div class="form-container">
