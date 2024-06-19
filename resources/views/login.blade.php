@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discipulado / Login</title>
+    <title>Discipulado</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -133,7 +133,7 @@
         </form>
 
         <div class="links">
-            <a href="#" class="forgot-password">Criar conta</a>
+            <a href="{{ route('newaccount') }}" class="forgot-password">Criar conta</a>
             <a href="#" class="forgot-password">Esqueceu a senha?</a>
         </div>
     </div>
