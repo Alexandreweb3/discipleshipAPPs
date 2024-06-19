@@ -104,7 +104,7 @@
 
         form input[type="submit"] {
             background-color: #FCDC13;
-            color: white;
+            color: #121212;
             padding: 10px 20px;
             border: none;
             border-radius: 4px;
