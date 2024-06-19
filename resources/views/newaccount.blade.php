@@ -124,16 +124,16 @@
         <a href="{{ route('index') }}"><img src="\storage\logoievv.png" alt="" class="logo"></a>
         <nav class="navegation">
             <ul>
-                <li><a href="{{ route('login.login') }}">login</a></li>
+            <li><a href="{{ route('login.index') }}">Login</a></li>
                 <li><a href="{{ route('index') }}">Sair</a></li>
             </ul>
         </nav>
     </header>
 
     <section>
-        <div></div> <!-- Placeholder para conteúdo à esquerda -->
+        <div></div> 
 
-        <form action="/criar-conta" method="POST">
+        <form>
             <h2 class="tittle">Criar Conta</h2>
 
             <label for="nome">Nome:</label>
