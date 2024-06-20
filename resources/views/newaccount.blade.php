@@ -18,7 +18,7 @@
         }
 
         .login-container {
-            background-color: #ffffff;
+            background-color: #252525;
             border-radius: 8px;
             padding: 40px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -30,7 +30,7 @@
             margin-top: 0;
             font-size: 24px;
             text-align: center;
-            color: #333333;
+            color: #FCDC18;
             margin-bottom: 30px;
         }
 
@@ -73,8 +73,7 @@
         .login-container .links a {
             display: block;
             text-decoration: none;
-            color: #000000;
-            /* Alterado para preto */
+            color: #fff;
             font-size: 16px;
             transition: color 0.3s ease;
             margin-top: 10px;

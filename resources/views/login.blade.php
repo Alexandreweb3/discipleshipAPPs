@@ -18,7 +18,7 @@
         }
 
         .login-container {
-            background-color: #ffffff;
+            background-color: #252525;
             border-radius: 8px;
             padding: 40px;
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
@@ -30,7 +30,7 @@
             margin-top: 0;
             font-size: 24px;
             text-align: center;
-            color: #333333;
+            color: #FCDC18;
             margin-bottom: 30px;
         }
 
@@ -68,12 +68,13 @@
         .login-container .links {
             text-align: center;
             margin-top: 20px;
+    
         }
 
         .login-container .links a {
             display: block;
             text-decoration: none;
-            color: #000000;
+            color: #fff;
             /* Alterado para preto */
             font-size: 16px;
             transition: color 0.3s ease;
@@ -81,7 +82,7 @@
         }
 
         .login-container .links a:hover {
-            color: #0056b3;
+            color: #FCDC18;
         }
 
         .container {
