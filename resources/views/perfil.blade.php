@@ -83,6 +83,10 @@
     color: #FCDC18;
 }
 
+.profile-container p{
+    color:#fff;
+}
+
 .profile-container {
     background-color: #252525;
     border-radius: 8px;
@@ -187,12 +191,20 @@
         </div>
         <div class="profile-container">
         <h2>Atualizar Perfil</h2>
+        <br>
+        <p>Caso precise redefinir sua senha ou email, basta fazer a atulização no form abaixo.</p>
+        <br>
 
         <div class="form-container">
             <form class="form" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="email"></label>
                     <input type="email" id="email" name="email" placeholder="Novo e-mail">
+                </div>
+                <form class="form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Confirmar e-mail">
                 </div>
                 <div class="form-group">
                     <label for="password"></label>
@@ -209,6 +221,7 @@
         <div class="links">
         <a href="{{ route('index') }}" class="logout">Sair</a>
         </div>
+        <br><br>
     </div>
 
     <div class="footer">
