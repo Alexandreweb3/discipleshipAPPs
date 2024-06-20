@@ -24,9 +24,9 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            padding: 50px;
-            min-height: 100vh;
+            padding: 45px; /* Reduzindo o padding para 30px */
             box-sizing: border-box;
+            margin-top: 55px; /* Espaço entre as sections */
         }
 
         header {
@@ -128,12 +128,13 @@
 
         .deliveringsummary {
             text-align: left;
-            padding: 50px;
+            padding: 40px; /* Reduzindo o padding para 30px */
             background-color: #121212;
             margin-top: 20px;
             color: #FCDC13;
             width: 50%;
         }
+
 
         .deliveringsummary h1 {
             font-size: 24px;
@@ -151,10 +152,9 @@
         .form-container {
             width: 50%;
             background-color: #161616;
-            padding: 50px;
+            padding: 40px; /* Reduzindo o padding para 30px */
             margin-top: 20px;
             color: #FCDC13;
-
         }
 
         .form-container h2 {
@@ -258,9 +258,10 @@
     </section>
     <section>
         <div class="deliveringsummary">
-            <h1>Sobre o Resumo</h1>
+            <h1>SEU RESUMO</h1>
             <p>Prezado aluno(a), <br>Para concluir esta etapa do curso, solicitamos que você prepare um resumo detalhado da aula que acabou de estudar. Este resumo não apenas reforçará seu aprendizado, mas também nos ajudará a entender como você assimilou os conceitos apresentados</p>
-            
+            <br>
+            <p>Em breve você receberá um feedback sobre a conclusão do seu resumo, fique atento que o responsável entrará em contato para maiores informações.</p>
         </div>
         <div class="form-container">
             <form action="#">
