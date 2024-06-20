@@ -7,6 +7,7 @@
     <title>Discipulado</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
         * {
             margin: 0;
             padding: 0;
@@ -25,15 +26,14 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            padding: 45px;
+            padding: 50px;
+            min-height: 100vh;
             box-sizing: border-box;
-            margin-top: 55px;
-        
         }
 
         header {
             width: 100%;
-            padding: 20px 100px;
+            padding: 40px 100px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -103,7 +103,7 @@
         }
 
         .myclasses iframe {
-            width: 48%;
+            width: 60%;
             height: 350px;
             border: none;
             align-self: flex-start;
@@ -123,20 +123,19 @@
 
         .myclasses .text-content p {
             font-size: 16px;
-            color: #fff;
             line-height: 1.6;
             margin-bottom: 20px;
+            color: #fff;
         }
 
         .deliveringsummary {
             text-align: left;
-            padding: 40px;
+            padding: 50px;
             background-color: #121212;
             margin-top: 20px;
             color: #FCDC13;
             width: 50%;
         }
-
 
         .deliveringsummary h1 {
             font-size: 24px;
@@ -154,9 +153,10 @@
         .form-container {
             width: 50%;
             background-color: #161616;
-            padding: 40px;
+            padding: 50px;
             margin-top: 20px;
             color: #FCDC13;
+
         }
 
         .form-container h2 {
@@ -213,7 +213,7 @@
 
     <section>
         <div class="myclasses">
-            <iframe width="500" height="350" src="https://www.youtube.com/embed/TVTjeo97b7I" frameborder="0" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Xy-LPgDhuXM?si=R4BnUimcwGb-EdU6" frameborder="0" allowfullscreen></iframe>
             <div class="text-content">
                 <h1>DÍZIMOS E OFERTAS</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo velit dolores necessitatibus odio vitae corrupti fugiat, ipsum sit nihil accusantium possimus tempore magni saepe laborum, id provident minima? Eveniet, vero!</p>
@@ -260,16 +260,14 @@
     </section>
     <section>
         <div class="deliveringsummary">
-            <h1>SEU RESUMO</h1>
+            <h1>Sobre o Resumo</h1>
             <p>Prezado aluno(a), <br>Para concluir esta etapa do curso, solicitamos que você prepare um resumo detalhado da aula que acabou de estudar. Este resumo não apenas reforçará seu aprendizado, mas também nos ajudará a entender como você assimilou os conceitos apresentados</p>
-            <br>
-            <p>Em breve você receberá um feedback sobre a conclusão do seu resumo, fique atento que o responsável entrará em contato para maiores informações.</p>
         </div>
         <div class="form-container">
             <form action="#">
-                <h1>Envio de Resumo da Aula</h1>
+                <h1>Envio do Resumo da Aula</h1>
                 <br><br>
-                <form action="/upload" method="post" color="white" enctype="multipart/form-data">
+                <form action="/upload" method="post" enctype="multipart/form-data">
                     <input type="file" id="file" name="file">
                     <br><br>
                     <input type="submit" value="Enviar">
