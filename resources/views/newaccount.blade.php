@@ -1,156 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discipulado</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
         body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #121212;
-            color: #FCDC13;
-            padding: 0;
             margin: 0;
-        }
-
-        section {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            padding: 100px;
-            min-height: 100vh;
-            box-sizing: border-box;
-        }
-
-        header {
-            width: 100%;
-            padding: 20px 100px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #121212;
-            z-index: 1000;
-            top: 0;
-            left: 0;
-        }
-
-        header .logo {
-            max-width: 150px;
-        }
-
-        header .navegation ul {
-            display: flex;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
-        header .navegation li {
-            list-style: none;
-        }
-
-        header .navegation li a {
-            display: inline-block;
-            color: #fff;
-            font-weight: 500;
-            text-decoration: none;
-            font-size: 19px;
-            margin-left: 100px;
-        }
-
-        header .navegation li a:hover {
-            color: #FCDC13;
-        }
-
-        form {
-            background-color: #171717;
-            padding: 20px;
+        .login-container {
+            background-color: #ffffff;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 450px;
-            margin-top: 50px;
-            margin: auto;
+            padding: 40px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
         }
 
-        form h2 {
+        .login-container h2 {
+            margin-top: 0;
+            font-size: 24px;
             text-align: center;
+            color: #333333;
+            margin-bottom: 30px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 100%;
+            padding: 15px;
+            margin-top: 15px;
             margin-bottom: 20px;
-        }
-
-        form label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-
-        form input[type="text"],
-        form input[type="email"],
-        form input[type="password"] {
-            width: 100%;
-            color: #fff;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            background-color: #121212;
-            border-color: #252525;
-        }
-
-        form input[type="submit"] {
-            background-color: #FCDC13;
-            color: #121212;
-            padding: 10px 20px;
             border: none;
-            border-radius: 4px;
-            cursor: pointer;
+            border-radius: 6px;
+            background-color: #f5f5f5;
             font-size: 16px;
-            width: 100%;
+            color: #333333;
+            box-sizing: border-box;
+            box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
         }
 
-        form input[type="submit"]:hover {
-            background-color: #e6c27c;
+        .login-container button[type="submit"] {
+            width: 100%;
+            background-color: #FCDC18;
+            color: #ffffff;
+            border: none;
+            padding: 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-container button[type="submit"]:hover {
+            background-color: #eead2d;
+        }
+
+        .login-container .links {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .login-container .links a {
+            display: block;
+            text-decoration: none;
+            color: #000000;
+            /* Alterado para preto */
+            font-size: 16px;
+            transition: color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        .login-container .links a:hover {
+            color: #0056b3;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: 80%;
+            margin: 20px auto;
+            color: white;
+        }
+
+        .footer p {
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <a href="{{ route('index') }}"><img src="\storage\logoievv.png" alt="" class="logo"></a>
-        <nav class="navegation">
-            <ul>
-            <li><a href="{{ route('login.index') }}">Login</a></li>
-                <li><a href="{{ route('index') }}">Sair</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section>
-        <div></div> 
-
-        <form>
-            <h2 class="tittle">Criar Conta</h2>
-
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required>
-
-            <label for="confirmar_senha">Confirmar Senha:</label>
-            <input type="password" id="confirmar_senha" name="confirmar_senha" required>
-
-            <input type="submit" value="Criar Conta">
-        </form>
+<div class="login-container">
+            <h2>CRIAR CONTA</h2>
+            <form action="" method="post" class="form">
+                @csrf
+                <input type="text" name="name" placeholder="Nome">
+                @error('name')
+                <span>{{ $message }}</span>
+                @enderror
+                <input type="text" name="email" placeholder="E-mail">
+                @error('email')
+                <span>{{ $message }}</span>
+                @enderror
+                <input type="password" name="password" placeholder="Senha">
+                @error('password')
+                <span>{{ $message }}</span>
+                @enderror
+                <input type="password" name="password_confirmation" placeholder="Confirme a Senha">
+                <button type="submit">Criar</button>
+            </form>
+        </div>
     </section>
+
+    <div class="footer">
+        <p>© 2024 Discipulado Verbo da Vida Praia</p>
+    </div>
+
 </body>
 
 </html>
