@@ -24,7 +24,7 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            padding: 100px;
+            padding: 50px;
             min-height: 100vh;
             box-sizing: border-box;
         }
@@ -101,7 +101,7 @@
         }
 
         .myclasses iframe {
-            width: 50%;
+            width: 48%;
             height: 350px;
             border: none;
             align-self: flex-start;
@@ -121,6 +121,7 @@
 
         .myclasses .text-content p {
             font-size: 16px;
+            color: #fff;
             line-height: 1.6;
             margin-bottom: 20px;
         }
