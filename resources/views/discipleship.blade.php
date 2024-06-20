@@ -24,9 +24,10 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            padding: 45px; /* Reduzindo o padding para 30px */
+            padding: 45px;
             box-sizing: border-box;
-            margin-top: 55px; /* Espaço entre as sections */
+            margin-top: 55px;
+        
         }
 
         header {
@@ -128,7 +129,7 @@
 
         .deliveringsummary {
             text-align: left;
-            padding: 40px; /* Reduzindo o padding para 30px */
+            padding: 40px;
             background-color: #121212;
             margin-top: 20px;
             color: #FCDC13;
@@ -152,7 +153,7 @@
         .form-container {
             width: 50%;
             background-color: #161616;
-            padding: 40px; /* Reduzindo o padding para 30px */
+            padding: 40px;
             margin-top: 20px;
             color: #FCDC13;
         }
