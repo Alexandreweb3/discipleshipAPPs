@@ -36,7 +36,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        padding: 40px 100px;
+        padding: 20px 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -84,6 +84,33 @@
         </header>
         </div>
     </section>
+    <div class="container">
+        <!-- Container para alinhar o conteúdo -->
+        <div class="profile-card">
+            <!-- Card do perfil -->
+            <div class="profile-picture">
+                <!-- Foto do perfil (pode ser uma imagem) -->
+                <img src="user-profile.jpg" alt="Foto de Perfil">
+                <input type="file" id="profile-image" name="profile-image" accept="image/*">
+                <!-- Campo para selecionar uma nova foto de perfil -->
+            </div>
+
+            <form action="#" method="POST" class="profile-form">
+                <!-- Formulário para atualizar informações do perfil -->
+                <label for="email">Novo Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Nova Senha:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="confirm-password">Confirmar Nova Senha:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+
+                <button type="submit">Salvar Alterações</button>
+                <!-- Botão para enviar o formulário -->
+            </form>
+        </div>
+    </div>
 </body>
 
 </html>

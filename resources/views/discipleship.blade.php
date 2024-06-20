@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discipulado</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
         * {
             margin: 0;
             padding: 0;
@@ -32,7 +33,7 @@
 
         header {
             width: 100%;
-            padding: 40px 100px;
+            padding: 20px 100px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -57,7 +58,7 @@
 
         header .navegation li a {
             display: inline-block;
-            color: #FCDC13;
+            color: #fff;
             font-weight: 500;
             text-decoration: none;
             font-size: 19px;
@@ -65,7 +66,7 @@
         }
 
         header .navegation li a:hover {
-            color: #fff;
+            color: #FCDC13;
         }
 
         nav.filter {
@@ -268,7 +269,7 @@
             <form action="#">
                 <h1>Envio de Resumo da Aula</h1>
                 <br><br>
-                <form action="/upload" method="post" enctype="multipart/form-data">
+                <form action="/upload" method="post" color="white" enctype="multipart/form-data">
                     <input type="file" id="file" name="file">
                     <br><br>
                     <input type="submit" value="Enviar">
