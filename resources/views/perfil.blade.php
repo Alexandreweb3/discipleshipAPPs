@@ -36,7 +36,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        padding: 20px 100px;
+        padding: 40px 100px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -69,6 +69,108 @@
         color: #FCDC13;
     }
 
+    .profile-container {
+    background-color: #252525;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 80%; 
+    max-width: 800px; 
+    text-align: center;
+}
+
+.profile-container h2{
+    color: #FCDC18;
+}
+
+.profile-container {
+    background-color: #252525;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto; /* Centralizar o container */
+}
+
+.form-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: calc(100% - 30px); /* Ajustar a largura dos inputs */
+    padding: 15px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #f5f5f5;
+    font-size: 16px;
+    color: #333333;
+    box-sizing: border-box;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.update-profile-button {
+    width: calc(100% - 30px); /* Ajustar a largura do botão */
+    background-color: #FCDC18;
+    color: #ffffff;
+    border: none;
+    padding: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.update-profile-button:hover {
+    background-color: #eead2d;
+}
+
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    margin-top: 10px;
+}
+
+.links a:hover {
+    color: #FCDC18;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+    color: white;
+}
+
+.footer p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 </style>
 
 <body>
@@ -83,34 +185,37 @@
             </nav>
         </header>
         </div>
-    </section>
-    <div class="container">
-        <!-- Container para alinhar o conteúdo -->
-        <div class="profile-card">
-            <!-- Card do perfil -->
-            <div class="profile-picture">
-                <!-- Foto do perfil (pode ser uma imagem) -->
-                <img src="user-profile.jpg" alt="Foto de Perfil">
-                <input type="file" id="profile-image" name="profile-image" accept="image/*">
-                <!-- Campo para selecionar uma nova foto de perfil -->
-            </div>
+        <div class="profile-container">
+        <h2>Atualizar Perfil</h2>
 
-            <form action="#" method="POST" class="profile-form">
-                <!-- Formulário para atualizar informações do perfil -->
-                <label for="email">Novo Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="password">Nova Senha:</label>
-                <input type="password" id="password" name="password" required>
-
-                <label for="confirm-password">Confirmar Nova Senha:</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
-
-                <button type="submit">Salvar Alterações</button>
-                <!-- Botão para enviar o formulário -->
+        <div class="form-container">
+            <form class="form" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" placeholder="Novo e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" placeholder="Nova Senha">
+                </div>
+                <div class="form-group">
+                    <label for="password_confirmation"></label>
+                    <input type="password" id="password_confirmation" placeholder="Confirmar Nova Senha">
+                </div>
             </form>
         </div>
+        <button type="submit" class="update-profile-button">Atualizar Perfil</button>
+
+        <div class="links">
+        <a href="{{ route('index') }}" class="logout">Sair</a>
+        </div>
     </div>
+
+    <div class="footer">
+        <p>© 2024 Discipulado Verbo da Vida Praia</p>
+    </div>
+</body>
+
 </body>
 
 </html>

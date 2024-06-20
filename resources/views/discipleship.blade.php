@@ -33,7 +33,7 @@
 
         header {
             width: 100%;
-            padding: 40px 100px;
+            padding: 20px 100px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -260,7 +260,7 @@
     </section>
     <section>
         <div class="deliveringsummary">
-            <h1>Sobre o Resumo</h1>
+            <h1>SOBRE O RESUMO</h1>
             <p>Prezado aluno(a), <br>Para concluir esta etapa do curso, solicitamos que você prepare um resumo detalhado da aula que acabou de estudar. Este resumo não apenas reforçará seu aprendizado, mas também nos ajudará a entender como você assimilou os conceitos apresentados</p>
         </div>
         <div class="form-container">
