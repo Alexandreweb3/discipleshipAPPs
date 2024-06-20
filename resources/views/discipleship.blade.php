@@ -237,7 +237,7 @@
             <h1>FINALIZOU?</h1>
             <p>Prezado aluno(a), <br>Parabéns por sua dedicação ao finalizar esta aula! Acreditamos que você foi grandemente edificado com o conteúdo apresentado. Caso surjam dúvidas ou se desejar discutir algum aspecto da aula, por favor, preencha o formulário abaixo. Nosso professor estará disponível para ajudá-lo da melhor forma possível.</p>
             <br>
-            <p>Lembramos que é obrigatório para alunos que estão repondo aula, anexar um resumo da aula no campo "Anexar arquivo". Certifique-se de que seu resumo seja claro e bem estruturado, com um mínimo de 20 linhas para uma análise adequada.</p>
+            <p>Lembramos que é obrigatório para alunos que estão repondo aula, anexar um resumo da aula no campo abaixo. Certifique-se de que seu resumo seja claro e bem estruturado, com um mínimo de 20 linhas para uma análise adequada.</p>
         </div>
 
         <div class="form-container">
@@ -251,14 +251,25 @@
 
                 <label for="message">Mensagem:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
-
-                <label for="file">Anexar resumo:</label>
-                <input type="file" id="file" name="file" accept=".pdf,.doc,.docx" required>
-                <small>Formatos permitidos: PDF, DOC, DOCX.</small>
-                <br>
-
                 <input type="submit" value="Enviar">
             </form>
+        </div>
+    </section>
+    <section>
+        <div class="deliveringsummary">
+            <h1>Sobre o Resumo</h1>
+            <p>Prezado aluno(a), <br>Para concluir esta etapa do curso, solicitamos que você prepare um resumo detalhado da aula que acabou de estudar. Este resumo não apenas reforçará seu aprendizado, mas também nos ajudará a entender como você assimilou os conceitos apresentados</p>
+            
+        </div>
+        <div class="form-container">
+            <form action="#">
+                <h1>Envio de Resumo da Aula</h1>
+                <br><br>
+                <form action="/upload" method="post" enctype="multipart/form-data">
+                    <input type="file" id="file" name="file">
+                    <br><br>
+                    <input type="submit" value="Enviar">
+                </form>
         </div>
     </section>
 </body>
