@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discipulado</title>
+    <title>Esqueceu a Senha</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -52,7 +52,7 @@
         .login-container button[type="submit"] {
             width: 100%;
             background-color: #FCDC18;
-            color: #ffffff;
+            color: #fff;
             border: none;
             padding: 15px;
             border-radius: 6px;
@@ -68,21 +68,19 @@
         .login-container .links {
             text-align: center;
             margin-top: 20px;
-    
         }
 
         .login-container .links a {
             display: block;
             text-decoration: none;
             color: #fff;
-            /* Alterado para preto */
             font-size: 16px;
             transition: color 0.3s ease;
             margin-top: 10px;
         }
 
         .login-container .links a:hover {
-            color: #FCDC18;
+            color: #0056b3;
         }
 
         .container {
@@ -106,42 +104,53 @@
             margin-bottom: 20px;
         }
     </style>
+    <script>
+        function showResetPasswordForm() {
+            document.getElementById('send-code-form').style.display = 'none';
+            document.getElementById('reset-password-form').style.display = 'block';
+        }
+    </script>
 </head>
+
 <body>
     <div class="login-container">
-        <h2>ACESSAR AULAS</h2>
-
-        @if (session()->has('success'))
-        {{ session()->get('success') }}
-        @endif
-
-        @error('error')
-        <span>{{ $message }}</span>
-        @enderror
-
-        <form action="{{ route('login.login') }}" method="post" class="form">
-            @csrf
-            <input type="text" name="email" placeholder="E-mail" value="davi@gmail.com">
-            @error('email')
-            <span>{{ $message }}</span>
-            @enderror
-            <input type="password" name="password" placeholder="Senha" value="Dev$1811">
-            @error('password')
-            <span>{{ $message }}</span>
-            @enderror
-            <button type="submit">Login</button>
-        </form>
-
+        <h2>ESQUECEU A SENHA</h2>
+        
+        <div id="send-code-form">
+            <form action="/send-code" method="post" class="form">
+                @csrf
+                <input type="text" name="contact" placeholder="E-mail ou Telefone">
+                @error('contact')
+                <span>{{ $message }}</span>
+                @enderror
+                <button type="submit" onclick="showResetPasswordForm(); return false;">Enviar Código</button>
+            </form>
+        </div>
+        
+        <div id="reset-password-form" style="display: none;">
+            <form action="/reset-password" method="post" class="form">
+                @csrf
+                <input type="text" name="verification_code" placeholder="Código de Verificação">
+                @error('verification_code')
+                <span>{{ $message }}</span>
+                @enderror
+                <input type="password" name="new_password" placeholder="Nova Senha">
+                @error('new_password')
+                <span>{{ $message }}</span>
+                @enderror
+                <input type="password" name="new_password_confirmation" placeholder="Confirme a Nova Senha">
+                <button type="submit">Redefinir Senha</button>
+            </form>
+        </div>
+        
         <div class="links">
-            <a href="{{ route('newaccount') }}" class="forgot-password">Criar conta</a>
-            <a href="{{ route('resetpassword') }}" class="forgot-password">Esqueceu a senha?</a>
+            <a href="/login">Voltar ao Login</a>
         </div>
     </div>
 
     <div class="footer">
         <p>© 2024 Discipulado Verbo da Vida Praia</p>
     </div>
-
 </body>
 
 </html>
