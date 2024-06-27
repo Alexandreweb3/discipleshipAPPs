@@ -207,7 +207,7 @@
         <div class="content">
             <div class="text">
                 <h2>Discipulado<br><span>IEVV</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit veniam amet facere porro pariatur, ad omnis odit nemo explicabo expedita eius aspernatur harum, dignissimos fuga? Vero, quas dolorem. Est, assumenda!</p>
+                <p>Estamos felizes em recebê-lo nesta plataforma dedicada ao seu crescimento espiritual. Aqui você pode revisar aulas e fortalecer seu entendimento da Palavra. Aproveite cada recurso disponível para enriquecer sua jornada de fé e conhecimento.</p>
                 <a href="{{ route('login.index') }}">Login</a>
             </div>
         </div>
