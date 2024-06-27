@@ -8,6 +8,7 @@ use App\Http\Controllers\LocationController;
 use App\Http\Controllers\PerfilController;
 use App\Http\Controllers\newaccountController;
 use App\Http\Controllers\resetpasswordController;
+use App\Http\Controllers\CreatenewpassController;
 
 
 Route::get('/', [IndexController::class, 'index'])->name('index');
@@ -16,6 +17,7 @@ Route::get('home', [DiscipleshipController::class, 'home'])->name('home');
 Route::get('/perfil', [PerfilController::class, 'exibirPerfil'])->name('perfil'); 
 Route::get('/newaccount', [newaccountController::class, 'newaccount'])->name('newaccount');
 Route::get('/resetpassword', [ResetPasswordController::class, 'resetPassword'])->name('resetpassword');
+Route::get('/createnewpass', [CreatenewpassController::class, 'index'])->name('createnewpass');
 
 
 Route::controller(LoginController::class)->group(function() {

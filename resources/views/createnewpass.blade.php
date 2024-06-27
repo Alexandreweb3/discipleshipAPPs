@@ -115,19 +115,23 @@
 <body>
     <div class="login-container">
         <h2>REDEFINIR SENHA</h2>
-
-        <div id="send-code-form">
-            <form action="/send-code" method="post" class="form">
-                @csrf
-                <input type="text" name="contact" placeholder="E-mail">
-                @error('contact')
-                <span>{{ $message }}</span>
-                @enderror
-                <button type="submit">Enviar Código</button>
-            </form>
-        </div>
+        
+        <form action="/reset-password" method="post" class="form">
+            @csrf
+            <input type="text" name="verification_code" placeholder="Código de Verificação">
+            @error('verification_code')
+            <span>{{ $message }}</span>
+            @enderror
+            <input type="password" name="new_password" placeholder="Nova Senha">
+            @error('new_password')
+            <span>{{ $message }}</span>
+            @enderror
+            <input type="password" name="new_password_confirmation" placeholder="Confirme a Nova Senha">
+            <button type="submit">Redefinir Senha</button>
+        </form>
+        
         <div class="links">
-            <a href="{{ route('index') }}">Voltar ao Login</a>
+            <a href="/login">Voltar ao Login</a>
         </div>
     </div>
 
@@ -135,5 +139,6 @@
         <p>© 2024 Discipulado Verbo da Vida Praia</p>
     </div>
 </body>
+
 
 </html>
