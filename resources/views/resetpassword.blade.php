@@ -127,7 +127,7 @@
             </form>
         </div>
         <div class="links">
-            <a href="{{ route('index') }}">Voltar ao Login</a>
+            <a href="{{ route('login.index') }}">Voltar ao Login</a>
         </div>
     </div>
 
