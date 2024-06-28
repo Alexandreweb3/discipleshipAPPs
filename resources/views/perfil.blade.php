@@ -92,14 +92,14 @@
             max-width: 1200px;
             width: 100%;
             display: flex;
-            
+
             justify-content: space-between;
-            
+
         }
 
         .login-form {
             width: 30%;
-            
+
         }
 
         .login-container h2 {
@@ -128,7 +128,7 @@
         .login-container button[type="submit"] {
             width: 100%;
             background-color: #FCDC18;
-            color: #fff;
+            color: #252525;
             border: none;
             padding: 15px;
             border-radius: 6px;
@@ -249,7 +249,7 @@
                 <span>{{ $message }}</span>
                 @enderror
                 <input type="text" placeholder="Confirme o E-mail">
-                <button type="submit">Salvar</button>
+                <button type="submit">Atualizar</button>
             </form>
         </div>
 
@@ -266,7 +266,7 @@
                 <span>{{ $message }}</span>
                 @enderror
                 <input type="text" placeholder="Confirme o E-mail">
-                <button type="submit">Salvar</button>
+                <button type="submit">Atualizar</button>
             </form>
         </div>
 
@@ -283,7 +283,7 @@
                 <span>{{ $message }}</span>
                 @enderror
                 <input type="number" pattern="[0-9]*" inputmode="numeric" placeholder="Telefone">
-                <button type="submit">Salvar</button>
+                <button type="submit">Atualizar</button>
             </form>
         </div>
     </div>
