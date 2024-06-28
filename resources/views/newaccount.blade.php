@@ -52,7 +52,7 @@
         .login-container button[type="submit"] {
             width: 100%;
             background-color: #FCDC18;
-            color: #ffffff;
+            color: #252525;
             border: none;
             padding: 15px;
             border-radius: 6px;
