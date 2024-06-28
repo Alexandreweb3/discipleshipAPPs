@@ -116,7 +116,7 @@
         margin-top: 50px;
         padding: 10px 25px;
         background: #FCDC13;
-        color: #fff;
+        color: #252525;
         font-weight: 500;
         letter-spacing: 1px;
         text-decoration: none;
@@ -189,6 +189,8 @@
     .boxImg .img4 {
         transform: rotate(-15deg)
     }
+
+
 </style>
 
 <body>
